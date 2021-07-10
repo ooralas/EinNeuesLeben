@@ -7,6 +7,13 @@ body {
   background-size: cover;
 }
 
+.disable_select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+}
+
 .headline {
   position: absolute;
   top: 40%;

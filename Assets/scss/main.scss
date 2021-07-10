@@ -8,6 +8,12 @@ body {
     background-size: cover;
   }
 
+  //hindert den User Text zu selectieren
+  .disable_select {
+    user-select: none;
+    -ms-user-select:none;
+}
+
   .headline {
     // Position
     position: absolute;
@@ -22,6 +28,7 @@ body {
     font-size: 7em;
     font-weight: normal;
   }
+
 
   footer {
     position: fixed;
@@ -50,6 +57,7 @@ body {
             margin-top: 1px;
         }
     }
+
 
     img {
     
