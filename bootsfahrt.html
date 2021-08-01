@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/css/bootsfahrt.css">
+    <title>Bootsfahrt</title>
+</head>
+<body>
+    
+    <main>
+        <img  class="boot rellax" src="/Assets/img/Bootsfahrt/BootWithOutBG.png" data-rellax-speed="-4" >
+        <img class="background rellax" src="/Assets/img/Bootsfahrt/MeerHimmelLong.png" data-rellax-speed="50">
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        const scrollContainer = document.querySelector("main");
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+
+        var rellax = new Rellax('.rellax');
+
+
+    </script>
+</body>
+</html>
