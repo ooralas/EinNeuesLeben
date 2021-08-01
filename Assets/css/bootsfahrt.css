@@ -6,19 +6,27 @@ body {
   background-color: blueviolet;
 }
 
-body .background {
-  height: 100%;
+body section {
+  overflow-x: hidden;
+  /*or overflow-x:scroll */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section .background {
+  display: none;
+  height: 100vh;
   z-index: 0;
 }
 
-body .boot {
+body section .boot {
   width: 50%;
+  position: relative;
   z-index: 1;
-  top: 50px;
-  right: 200px;
 }
 
-body .scroll {
+body section .scroll {
   position: fixed;
   bottom: 0;
   left: 0;
