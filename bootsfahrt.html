@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/css/bootsfahrt.css">
+    <title>Bootsfahrt</title>
+</head>
+<body>
+    
+        <img  class="boot rellax scroll" src="/Assets/img/Bootsfahrt/BootWithOutBG.png" alt="" data-rellax-speed="-50" >
+        <img  class="background rellax scroll"  src="/Assets/img/Bootsfahrt/MeerHimmelLong.png"  alt=""  data-rellax-percentage="0.5">
+        
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jInvertScroll/0.8.3/js/jquery.jInvertScroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js">
+    </script>
+    <script>
+        
+        (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            //height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent)
+            }
+        });
+    }(jQuery));
+
+var rellax = new Rellax('.rellax', {
+    // Activate horizantal scrolling
+    // Turned off by default
+    horizontal: true,
+    //Deactivate vertical scrolling
+     vertical: false
+  });
+
+
+    </script>
+</body>
+</html>
