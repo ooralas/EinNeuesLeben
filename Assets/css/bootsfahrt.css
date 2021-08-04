@@ -25,12 +25,12 @@ html ::-webkit-scrollbar-thumb {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-html .background #backgroundIMG {
+html body .background #backgroundIMG {
   position: fixed;
   z-index: 0;
 }
 
-html .boot #bootIMG {
+html body .boot #bootIMG {
   width: 40%;
   position: fixed;
   z-index: 1;
@@ -38,7 +38,7 @@ html .boot #bootIMG {
   left: 0px;
 }
 
-html p img {
+html body p img {
   position: fixed;
   width: 100px;
   top: 60%;
