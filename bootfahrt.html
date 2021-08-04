@@ -19,31 +19,33 @@
             let background = document.getElementById("backgroundIMG");
 
          
-                
+            function myFunction(x) {
+                window.addEventListener('scroll',function(){
+                    var value = window.scrollY;
+                    if (x.matches) { // If media query matches
+
+                        //document.body.style.backgroundColor = "yellow";
+                        boot.style.left = value * 0.1  + 'px';
+                        background.style.left = -value * 0.17 + 'px';
+
+                    } else {
+
+                    
+                    // var positionBoot = boot.style.left;
+                    // console.log("boot Position", positionBoot)
+                    boot.style.left = value * 0.3  + 'px';
+                    background.style.left = -value * 0.17 + 'px';
+
+                    }
+                });
+            }
+
+            var x = window.matchMedia("(max-width: 1000px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes   
            
             
-            window.addEventListener('scroll',function(){
-                
-                //console.log(window.scrollY);
-                
-                
 
-                var value = window.scrollY;
-                var positionBoot = boot.style.left;
-                console.log("boot Position", positionBoot)
-                
-                
-                
-                
-                if(value>=3687){
-                   // console.log("hallo");
-                }
-
-                
-                boot.style.left = value * 0.3  + 'px';
-                background.style.left = -value * 0.17 + 'px';
-                
-            });
             
             
 
