@@ -7,6 +7,14 @@ body {
   background-size: cover;
 }
 
+body #enter {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;

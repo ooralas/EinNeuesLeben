@@ -6,6 +6,14 @@ body {
     background-image: url(/Assets/img/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
     background-position-y: -25px;
     background-size: cover;
+
+    #enter{
+      position:absolute;
+      top: 60%;
+      left:45%;
+      font-family:'Montserrat', sans-serif;
+      text-decoration: none;
+    }
   }
 
   //hindert den User Text zu selectieren
