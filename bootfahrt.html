@@ -13,41 +13,7 @@
             <img src="/Assets/img/Bootsfahrt/BootWithOutBG.png" id="bootIMG">
         </div>
     
-        <script type="text/javascript">
-            
-            let boot = document.getElementById("bootIMG");
-            let background = document.getElementById("backgroundIMG");
-
-         
-               
-           
-            
-            window.addEventListener('scroll',function(){
-                
-                //console.log(window.scrollY);
-                
-                
-
-                var value = window.scrollY;
-                var positionBoot = boot.style.left;
-                console.log("boot Position", positionBoot)
-                
-                
-                
-                
-                if(value>=3687){
-                   // console.log("hallo");
-                }
-
-                
-                boot.style.left = value * 0.3  + 'px';
-                background.style.left = -value * 0.17 + 'px';
-                
-            });
-            
-            
-
-        </script>
+        <script type="text/javascript" src="/Assets/js/bootsfahrt.js"></script>
         
     </body>
     
