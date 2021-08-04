@@ -42,29 +42,3 @@ body, html{
   left: 100px;
 }
 
-/* Media Queries funktionieren richtig, wir müssen die ganze Funktionalität von Queries in
-JavaScript verschieben und da alle Eigenschaften, die wir in den Zeilen 47 --> 68 implementiert haben, da in JS schreiben.*/
-@media (max-width: 900px) {
-    #bootIMG {
-        background-color: red;
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 30%;
-        left: 70px;
-      }
-
-      #backgroundIMG {
-        display: none;
-    }
-
-    .background {
-        background-image: url(/Assets/img/Bootsfahrt/MeerHimmel.png);
-        position:fixed;
-        width: 120vw;
-        height: 100vh;
-        left: -80px;
-        
-        }
-
-}
