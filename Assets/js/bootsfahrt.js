@@ -5,7 +5,7 @@ const BACKGROUND = document.getElementById("backgroundIMG");
    
 
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#nextBtTrigger").click(function(){
         $("img").animate({
             right: 20 + "px",
             opacity: 1,
@@ -22,9 +22,7 @@ window.addEventListener('scroll',function(){
 
     console.log(value)
     if(value > 3476){
-        $("button").trigger("click");
-        console.log("Hier wird gefeuert")
-        
+        $("#nextBtTrigger").trigger("click");
+        console.log("Hier wird gefeuert");
     }
-    
 });

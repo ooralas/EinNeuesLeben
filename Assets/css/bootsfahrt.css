@@ -38,10 +38,14 @@ html body .boot #bootIMG {
   left: 0px;
 }
 
-html body p img {
+html body a img {
   position: fixed;
   width: 100px;
   top: 60%;
   z-index: 2;
+  opacity: 0;
+}
+
+html body .hide {
   opacity: 0;
 }
