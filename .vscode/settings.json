@@ -3,7 +3,7 @@
        {
            "format": "expanded",
            "extensionName": ".css",
-           "savePath": "./Assets/css"
+           "savePath": "./Assets/css/Szene"
        }
    ],
    "liveSassCompile.settings.excludeList": [
