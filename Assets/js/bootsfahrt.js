@@ -36,7 +36,6 @@ let startSound = () => {
     if(!sound.playing()){
         sound.fade(0, 0.4, 5000);
         sound.play();
-        
     }else{
         console.log("Sound is: ", sound.playing());
     }
