@@ -1,7 +1,7 @@
 @import "../_font.scss";
 
 html {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     
     
     box-sizing: border-box;
@@ -64,6 +64,27 @@ html {
     }
 }
 
+.rahmen{
+    img{
+        top: 10%;
+        left: -55%;
+        width: 70%;
+        position: fixed;
+        z-index: 3;
+        
+    }
+}
+
+.rahmen2{
+    img{
+        top: 10%;
+        right: -55%;
+        width: 70%;
+        position: fixed;
+        z-index: 3;
+        
+    }
+}
 
 
 

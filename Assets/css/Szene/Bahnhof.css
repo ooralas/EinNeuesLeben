@@ -37,3 +37,19 @@ html {
   position: fixed;
   z-index: 3;
 }
+
+.rahmen img {
+  top: 10%;
+  left: -55%;
+  width: 70%;
+  position: fixed;
+  z-index: 3;
+}
+
+.rahmen2 img {
+  top: 10%;
+  right: -55%;
+  width: 70%;
+  position: fixed;
+  z-index: 3;
+}
