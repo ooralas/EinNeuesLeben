@@ -15,17 +15,17 @@ html {
 }
 
 .zugHinten img {
-  top: 25%;
-  left: 5%;
+  top: 21%;
+  left: -10%;
   width: 70%;
   position: fixed;
   z-index: 1;
 }
 
 .zugVorne img {
-  top: 25%;
-  left: 15%;
-  width: 70%;
+  top: 40%;
+  left: 64%;
+  width: 15%;
   position: fixed;
   z-index: 2;
 }
@@ -35,4 +35,5 @@ html {
   left: 15%;
   width: 70%;
   position: fixed;
+  z-index: 3;
 }
