@@ -5,10 +5,17 @@ const DIALLO = document.getElementById("diallo");
 window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
-    ZUG_VORNE.style.left = 10 + -value * 0.01 + '%';
-//    ZUG_VORNE.style.top = 195 + value * 0.018 + 'px';
-//    DIALLO.style.width = 300 + value * 0.3 + 'px';
-//    DIALLO.style.left = 600 + -value * 0.3 + 'px';
-    
+
+    if(value<800){
+    ZUG_VORNE.style.left = 15  - value * 0.05  + '%';
+    //ZUG_VORNE.style.top = 25 + value * 0.00297 + '%';
+    ZUG_VORNE.style.width = 70 + value * 0.037 + '%';
+
+    ZUG_HINTEN.style.left = 5  + value * 0.05  + '%';
+    //ZUG_VORNE.style.top = 25 + value * 0.00297 + '%';
+    //ZUG_HINTEN.style.width = 70 + value * 0.037 + '%';
+
+    //DIALLO.style.left = 600 + -value * 0.3 + 'px';
+    }
     console.log(value)
 });
