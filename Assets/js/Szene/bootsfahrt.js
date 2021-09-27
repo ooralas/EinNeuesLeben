@@ -21,8 +21,8 @@ $(document).ready(function(){
 window.addEventListener('scroll',function(){
     
     var value = window.scrollY;
-    BOOT.style.left = value * 0.3  + 'px';
-    BACKGROUND.style.left = -value * 0.17 + 'px';
+    BOOT.style.left =  value * 0.0121  + '%';
+    BACKGROUND.style.left = 10 -value * 0.0064 + '%';
     startSound();
 
     console.log(value)

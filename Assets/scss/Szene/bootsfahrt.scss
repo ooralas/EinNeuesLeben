@@ -23,12 +23,16 @@
     }
 
     body{
+        background-color: black;
         .background{
 
             #backgroundIMG {
     
+                left: 10%;
+                top: 25%;
+                width: 100%;
+                z-index: 2;
                 position: fixed;
-                z-index: 0;
                 
             }
         }
@@ -36,12 +40,36 @@
         .boot{
     
             #bootIMG {
-                width: 40%;
+                left: 0%;
+                top: 25%;
+                width: 80%;
+                z-index: 2;
                 position: fixed;
-                z-index: 1;
-                top: 10%;
-                left: 0px;
+                
               }
+        }
+
+
+        
+
+        .balkenLinks {
+            img{
+                left: -65%;
+                top: 25%;
+                width: 80%;
+                z-index: 3;
+                position: fixed;
+            }
+        }
+
+        .balkenRechts {
+            img{
+                left: 85%;
+                top: 25%;
+                width: 80%;
+                z-index: 3;
+                position: fixed;
+            }
         }
     
         a {
@@ -49,11 +77,11 @@
                 position: fixed; 
                 width: 100px;
                 top:60%;
-                z-index: 2;
+                z-index: 4;
                 opacity: 0;
             }
         }
-
+        
         .hide{
             opacity: 0;
         }
