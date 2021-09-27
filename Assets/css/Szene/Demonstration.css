@@ -48,10 +48,10 @@ html {
   z-index: 3;
 }
 
-.balken img {
-  top: 83.7%;
+.rahmen img {
+  top: 20%;
   left: 20%;
-  width: 100%;
+  width: 60%;
   position: fixed;
-  z-index: 34;
+  z-index: 4;
 }
