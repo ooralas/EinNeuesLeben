@@ -1,4 +1,4 @@
-const ELTERN = document.getElementById("eltern");
+const FARBE = document.getElementById("farbe");
 const DIALLO = document.getElementById("diallo");
 
 $(document).ready(function(){
@@ -15,14 +15,11 @@ window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
 
-    //DIALLO.style.height = 20 + value * 0.3 + '%';
-    //DIALLO.style.transform = "scale(2,2)"
-    DIALLO.style.width = 60 + value * 0.011 + '%';
-    DIALLO.style.left = 20 + -value * 0.011 + '%';
+    DIALLO.style.left = 20 + value * 0.01 + '%';
+    FARBE.style.left = -1 + value * 0.01 + '%';
     
     
     console.log(value);
-
 
     if(value > 1700){
         $("#nextBtTrigger").trigger("click");

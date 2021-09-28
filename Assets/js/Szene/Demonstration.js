@@ -1,7 +1,20 @@
+
+//const SOLDIERS = document.getElementById("soldiers");
 const CROWD = document.getElementById("crowd");
-const SOLDIERS = document.getElementById("soldiers");
 const SOLDIER1 = document.getElementById("soldier1");
 const SOLDIER2 = document.getElementById("soldier2");
+
+
+$(document).ready(function(){
+    $("#nextBtTrigger").click(function(){
+        $("img").animate({
+            right: 20 + "px",
+            opacity: 1,
+            
+        },900);
+    });
+});
+
 window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
@@ -56,6 +69,9 @@ window.addEventListener('scroll',function(){
     }
     
     console.log(value);
-    //console.log(value * 0.014 + 40 - 28.4 + '%');
-    //console.log(-value * 0.014 - 20 + 48.4 + '%');
+
+    if(value > 1700){
+        $("#nextBtTrigger").trigger("click");
+        console.log("Hier wird gefeuert");
+    }
 });
