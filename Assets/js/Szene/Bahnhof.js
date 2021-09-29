@@ -2,6 +2,11 @@ const ZUG_VORNE = document.getElementById("zugVorne");
 const ZUG_HINTEN = document.getElementById("zugHinten");
 const DIALLO = document.getElementById("diallo");
 
+var sound = new Howl({
+    src: ['https://www.mboxdrive.com/Frankreich_Bahnhof.mp3'],
+    html5:true
+});
+
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
         $("img").animate({
@@ -11,6 +16,9 @@ $(document).ready(function(){
         },900);
     });
 });
+
+
+
 
 window.addEventListener('scroll',function(){
     
@@ -32,9 +40,19 @@ window.addEventListener('scroll',function(){
     DIALLO.style.left = 15 + -value * 0.007 + '%';
     console.log(value)
 
+    startSound();
 
     if(value > 1700){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
     }
 });
+
+let startSound = () => {
+    if(!sound.playing()){
+        sound.fade(0, 0.4, 5000);
+        sound.play();
+    }else{
+        console.log("Sound is: ", sound.playing());
+    }
+}

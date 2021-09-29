@@ -1,6 +1,11 @@
 const ELTERN = document.getElementById("eltern");
 const DIALLO = document.getElementById("diallo");
 
+var sound = new Howl({
+    src: ['https://www.mboxdrive.com/Trennung_von_der_Familie.mp3'],
+    html5:true
+});
+
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
         $("img").animate({
@@ -22,6 +27,7 @@ window.addEventListener('scroll',function(){
     
     
     console.log(value);
+    startSound();
 
 
     if(value > 1700){
@@ -29,3 +35,12 @@ window.addEventListener('scroll',function(){
         console.log("Hier wird gefeuert");
     }
 });
+
+let startSound = () => {
+    if(!sound.playing()){
+        sound.fade(0, 0.4, 5000);
+        sound.play();
+    }else{
+        console.log("Sound is: ", sound.playing());
+    }
+}
