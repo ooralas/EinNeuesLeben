@@ -1,3 +1,7 @@
+var sound = new Howl({
+    src: ['https://www.mboxdrive.com/Fahrt_mit_Bus.mp3'],
+    html5:true
+  });
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
@@ -9,10 +13,14 @@ $(document).ready(function(){
     });
 });
 
+ 
+
 
 window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
+
+    startSound();
     
     console.log(value)
     if(value > 200){
@@ -22,3 +30,12 @@ window.addEventListener('scroll',function(){
     
     console.log(value)
 });
+
+let startSound = () => {
+    if(!sound.playing()){
+        sound.fade(0, 0.4, 5000);
+        sound.play();
+    }else{
+        console.log("Sound is: ", sound.playing());
+    }
+}

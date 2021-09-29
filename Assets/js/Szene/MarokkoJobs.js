@@ -1,6 +1,11 @@
 const FARBE = document.getElementById("farbe");
 const DIALLO = document.getElementById("diallo");
 
+var sound = new Howl({
+    src: ['https://www.mboxdrive.com/Marroko.mp3'],
+    html5:true
+});
+
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
         $("img").animate({
@@ -20,9 +25,19 @@ window.addEventListener('scroll',function(){
     
     
     console.log(value);
+    startSound();
 
     if(value > 1700){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
     }
 });
+
+let startSound = () => {
+    if(!sound.playing()){
+        sound.fade(0, 0.4, 5000);
+        sound.play();
+    }else{
+        console.log("Sound is: ", sound.playing());
+    }
+}
