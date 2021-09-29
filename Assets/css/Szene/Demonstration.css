@@ -55,3 +55,15 @@ html {
   position: fixed;
   z-index: 4;
 }
+
+a img {
+  position: fixed;
+  width: 6%;
+  top: 50%;
+  z-index: 4;
+  opacity: 0;
+}
+
+.hide {
+  opacity: 0;
+}
