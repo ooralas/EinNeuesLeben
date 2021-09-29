@@ -42,7 +42,7 @@ window.addEventListener('scroll',function(){
 
     startSound();
 
-    if(value > 1700){
+    if(value > 1000){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
     }
