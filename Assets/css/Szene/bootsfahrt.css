@@ -31,7 +31,7 @@ html body {
 
 html body .background #backgroundIMG {
   left: 10%;
-  top: 25%;
+  top: 30%;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -39,7 +39,7 @@ html body .background #backgroundIMG {
 
 html body .boot #bootIMG {
   left: 0%;
-  top: 25%;
+  top: 30%;
   width: 80%;
   z-index: 2;
   position: fixed;
@@ -47,7 +47,7 @@ html body .boot #bootIMG {
 
 html body .balkenLinks img {
   left: -65%;
-  top: 25%;
+  top: 30%;
   width: 80%;
   z-index: 3;
   position: fixed;
@@ -55,7 +55,7 @@ html body .balkenLinks img {
 
 html body .balkenRechts img {
   left: 85%;
-  top: 25%;
+  top: 30%;
   width: 80%;
   z-index: 3;
   position: fixed;

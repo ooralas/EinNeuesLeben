@@ -23,7 +23,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .background img {
-  top: 20%;
+  top: 30%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -31,7 +31,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .diallo img {
-  top: 20%;
+  top: 30%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -39,7 +39,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .eltern img {
-  top: 20%;
+  top: 30%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -47,7 +47,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .rahmen img {
-  top: 20%;
+  top: 30%;
   left: 10%;
   width: 60%;
   position: fixed;
