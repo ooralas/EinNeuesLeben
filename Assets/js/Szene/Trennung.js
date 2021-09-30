@@ -8,6 +8,7 @@ var sound = new Howl({
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
+        $("#div1").fadeIn(3000);
         $("img").animate({
             right: 20 + "px",
             opacity: 1,

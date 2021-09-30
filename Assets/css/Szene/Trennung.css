@@ -54,6 +54,25 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+.rahmen2 img {
+  top: 29%;
+  left: 19%;
+  width: 62%;
+  position: fixed;
+  z-index: 3;
+}
+
+.div1 {
+  display: none;
+  color: white;
+  position: fixed;
+  font-size: 150%;
+  left: 35%;
+  top: 10%;
+  width: 30%;
+  font-family: 'Caveat Brush', cursive;
+}
+
 a img {
   position: fixed;
   width: 6%;
