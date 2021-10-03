@@ -1,3 +1,6 @@
+const PROGRESSIVEBAR = document.getElementById("progBar");
+
+
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Fahrt_mit_Bus.mp3'],
     html5:true
@@ -19,6 +22,7 @@ window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
     startSound();
+    startTimeBar(sound.duration());
     
     console.log(value)
 
@@ -42,3 +46,5 @@ let startSound = () => {
         console.log("Sound is: ", sound.playing());
     }
 }
+
+let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
