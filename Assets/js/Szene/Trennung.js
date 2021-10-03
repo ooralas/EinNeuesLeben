@@ -1,6 +1,8 @@
 const ELTERN = document.getElementById("eltern");
 const DIALLO = document.getElementById("diallo");
 const BACKGROUND = document.getElementById("background");
+const PROGRESSIVEBAR = document.getElementById("progBar");
+
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Trennung_von_der_Familie.mp3'],
@@ -29,6 +31,7 @@ window.addEventListener('scroll',function(){
     
     console.log(value);
     startSound();
+    startTimeBar(sound.duration());
 
     if(value > 500){
         $("#text").fadeIn(1000);
@@ -48,3 +51,5 @@ let startSound = () => {
         console.log("Sound is: ", sound.playing());
     }
 }
+
+let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
