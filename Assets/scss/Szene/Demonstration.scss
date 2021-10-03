@@ -80,10 +80,10 @@ html {
     }
 
     #text {
-        // display:none;
+        display:none;
         color: white;
         position: fixed;
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         left: 35%;
         top: 12%;
         width: 30%;
@@ -110,6 +110,17 @@ html {
         @media (max-width: 1200px) { 
             top: 19%;
         }
+
+        a {
+          text-decoration: none;  
+        }
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            color: rgb(211, 83, 44);  
+          }
     }
 }
 

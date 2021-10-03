@@ -75,6 +75,10 @@ window.addEventListener('scroll',function(){
     console.log(value);
     startSound();
 
+    if(value > 500){
+        $("#text").fadeIn(1000);
+    }
+
     if(value > 900){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");

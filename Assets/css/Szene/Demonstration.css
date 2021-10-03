@@ -83,9 +83,10 @@ html ::-webkit-scrollbar-thumb {
 }
 
 #main #text {
+  display: none;
   color: white;
   position: fixed;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   left: 35%;
   top: 12%;
   width: 30%;
@@ -122,6 +123,19 @@ html ::-webkit-scrollbar-thumb {
   #main #text {
     top: 19%;
   }
+}
+
+#main #text a {
+  text-decoration: none;
+}
+
+#main #text a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main #text a:hover {
+  color: #d3532c;
 }
 
 a img {
