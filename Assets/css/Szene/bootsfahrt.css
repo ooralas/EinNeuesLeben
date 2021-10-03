@@ -86,6 +86,7 @@ html body #main #zeichnungenContainer #rahmen {
 }
 
 html body #main #text {
+  display: none;
   color: white;
   position: fixed;
   font-size: 1.3vw;
