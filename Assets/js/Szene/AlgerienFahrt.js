@@ -5,11 +5,9 @@ var sound = new Howl({
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
-        $("#text").fadeIn(3000);
         $("img").animate({
             right: 20 + "px",
             opacity: 1,
-            
         },900);
     });
 });
@@ -20,10 +18,14 @@ $(document).ready(function(){
 window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
-
     startSound();
     
     console.log(value)
+
+    if(value > 50){
+        $("#text").fadeIn(1000);
+    }
+
     if(value > 200){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
