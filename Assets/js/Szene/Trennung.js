@@ -1,5 +1,6 @@
 const ELTERN = document.getElementById("eltern");
 const DIALLO = document.getElementById("diallo");
+const BACKGROUND = document.getElementById("background");
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Trennung_von_der_Familie.mp3'],
@@ -8,11 +9,9 @@ var sound = new Howl({
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
-        $("#text").fadeIn(3000);
         $("img").animate({
             right: 20 + "px",
             opacity: 1,
-            
         },900);
     });
 });
@@ -21,15 +20,19 @@ window.addEventListener('scroll',function(){
     
     let value = window.scrollY;
 
-    //DIALLO.style.height = 20 + value * 0.3 + '%';
-    //DIALLO.style.transform = "scale(2,2)"
-    DIALLO.style.width = 60 + value * 0.011 + '%';
-    DIALLO.style.left = 20 + -value * 0.011 + '%';
     
+    DIALLO.style.width = 60 + value * 0.011 + '%';
+    DIALLO.style.left = 20 -value * 0.011 + '%';
+
+    ELTERN.style.width = 60 - value * 0.0011 + '%';
+    ELTERN.style.right =  20 - value * 0.0011 + '%';
     
     console.log(value);
     startSound();
 
+    if(value > 500){
+        $("#text").fadeIn(1000);
+    }
 
     if(value > 1000){
         $("#nextBtTrigger").trigger("click");
