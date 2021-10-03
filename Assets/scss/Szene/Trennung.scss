@@ -29,49 +29,78 @@ html {
         z-index: 0;
 }
 
-#diallo {
-        top: 30%;
-        left: 20%;
-        width: 60%;
-        position: fixed;
-        z-index: 1;
-}
+#main{
+    display: flex;
+    flex-direction: column;
 
-#eltern {
-        top: 30%;
-        left: 20%;
-        width: 60%;
-        position: fixed;
-        z-index: 2;
-}
+    #zeichnungenContainer{
+        #diallo {
+            top: 30%;
+            left: 20%;
+            width: 60%;
+            position: fixed;
+            z-index: 1;
+        }
+    
+        #eltern {
+            top: 30%;
+            left: 20%;
+            width: 60%;
+            position: fixed;
+            z-index: 2;
+        }
+    
+        #rahmen{
+            top: 30%;
+            left: 10%;
+            width: 60%;
+            position: fixed;
+            z-index: 3;
+        }
+    
+        #rahmen2{
+            top: 29%;
+            left: 19%;
+            width: 62%;
+            position: fixed;
+            z-index: 3;
+        }
+    }
+    
 
-#rahmen{
-        top: 30%;
-        left: 10%;
-        width: 60%;
+    #text{
+        display:none;
+        color: white;
         position: fixed;
-        z-index: 3;
-}
+        font-size: 1.3vw;
+        left: 35%;
+        top: 10%;
+        width: 30%;
+        font-family: 'Caveat Brush', cursive;
 
-#rahmen2{
-        top: 29%;
-        left: 19%;
-        width: 62%;
-        position: fixed;
-        z-index: 3;
-}
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+            top: 21%;
+        }
 
-#text{
-    display:none;
-    color: white;
-    position: fixed;
-    font-size: 150%;
-    left: 35%;
-    top: 10%;
-    width: 30%;
-    font-family: 'Caveat Brush', cursive;
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 640px) { 
+            top: 23%;
+        }
+
+        @media (max-width: 731px) { 
+            top: 21%;
+        }
+
+        @media (max-width: 800px) { 
+            top: 19%;
+        }
+
+        
+        }
     
 }
+
 
 a {
     img{
