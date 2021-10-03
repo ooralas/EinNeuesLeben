@@ -22,7 +22,7 @@ html ::-webkit-scrollbar-thumb {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-.background img {
+.background {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -30,7 +30,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 0;
 }
 
-.diallo img {
+#diallo {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -38,7 +38,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
-.eltern img {
+#eltern {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -46,7 +46,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
-.rahmen img {
+#rahmen {
   top: 30%;
   left: 10%;
   width: 60%;
@@ -54,7 +54,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
-.rahmen2 img {
+#rahmen2 {
   top: 29%;
   left: 19%;
   width: 62%;
@@ -62,7 +62,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
-.div1 {
+#text {
   display: none;
   color: white;
   position: fixed;

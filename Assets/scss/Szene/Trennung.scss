@@ -21,62 +21,47 @@ html {
 }
 
 .background {
-    img {
+
         top: 30%;
         left: 20%;
         width: 60%;
         position: fixed;
         z-index: 0;
-        
-        
-    }
 }
 
-.diallo {
-    img {
-        
-        
+#diallo {
         top: 30%;
         left: 20%;
         width: 60%;
         position: fixed;
         z-index: 1;
-        
-        
-    }
 }
 
-.eltern {
-    img{
+#eltern {
         top: 30%;
         left: 20%;
         width: 60%;
         position: fixed;
         z-index: 2;
-    }
 }
 
-.rahmen{
-    img{
+#rahmen{
         top: 30%;
         left: 10%;
         width: 60%;
         position: fixed;
         z-index: 3;
-    }
 }
 
-.rahmen2{
-    img{
+#rahmen2{
         top: 29%;
         left: 19%;
         width: 62%;
         position: fixed;
         z-index: 3;
-    }
 }
 
-.div1{
+#text{
     display:none;
     color: white;
     position: fixed;
