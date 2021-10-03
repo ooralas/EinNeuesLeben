@@ -20,7 +20,12 @@ window.addEventListener('scroll',function(){
     startSound();
 
     console.log(value)
-    if(value > 200){
+
+    if(value > 100){
+        $("#text").fadeIn(1000);
+    }
+
+    if(value > 400){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
     }
