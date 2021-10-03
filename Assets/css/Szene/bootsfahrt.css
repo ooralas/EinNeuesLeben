@@ -29,7 +29,23 @@ html body {
   background-color: black;
 }
 
-html body .background #backgroundIMG {
+html body #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #main #zeichnungenContainer #backgroundIMG {
   left: 10%;
   top: 30%;
   width: 100%;
@@ -37,7 +53,7 @@ html body .background #backgroundIMG {
   position: fixed;
 }
 
-html body .boot #bootIMG {
+html body #main #zeichnungenContainer #bootIMG {
   left: 0%;
   top: 30%;
   width: 80%;
@@ -45,7 +61,7 @@ html body .boot #bootIMG {
   position: fixed;
 }
 
-html body .balkenLinks img {
+html body #main #zeichnungenContainer #balkenLinks {
   left: -65%;
   top: 30%;
   width: 80%;
@@ -53,7 +69,7 @@ html body .balkenLinks img {
   position: fixed;
 }
 
-html body .balkenRechts img {
+html body #main #zeichnungenContainer #balkenRechts {
   left: 85%;
   top: 30%;
   width: 80%;
@@ -61,12 +77,54 @@ html body .balkenRechts img {
   position: fixed;
 }
 
-html body #rahmen {
+html body #main #zeichnungenContainer #rahmen {
   width: 70%;
   top: 30%;
   left: 15%;
   position: fixed;
   z-index: 3;
+}
+
+html body #main #text {
+  color: white;
+  position: fixed;
+  font-size: 1.3vw;
+  left: 35%;
+  top: 12%;
+  width: 30%;
+  font-family: 'Caveat Brush', cursive;
+  /* Landscape phones and down */
+  /* Landscape phone to portrait tablet */
+}
+
+@media (max-width: 480px) {
+  html body #main #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 640px) {
+  html body #main #text {
+    top: 23%;
+  }
+}
+
+@media (max-width: 731px) {
+  html body #main #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 800px) {
+  html body #main #text {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html body #main #text {
+    top: 19%;
+  }
 }
 
 html body a img {
