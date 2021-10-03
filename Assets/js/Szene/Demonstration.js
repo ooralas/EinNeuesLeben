@@ -75,8 +75,9 @@ window.addEventListener('scroll',function(){
     
     console.log(value);
     startSound();
+    startTimeBar(sound.duration());
     console.log("soundDur",sound.duration())
-    PROGRESSIVEBAR.style.animation = "fillTimeBar " + sound.duration()+ "s" + " linear forwards"
+    
 
 
     if(value > 500){
@@ -97,3 +98,5 @@ let startSound = () => {
         console.log("Sound is: ", sound.playing());
     }
 }
+
+let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
