@@ -1,6 +1,8 @@
 const ZUG_VORNE = document.getElementById("zugVorne");
 const ZUG_HINTEN = document.getElementById("zugHinten");
 const DIALLO = document.getElementById("diallo");
+const PROGRESSIVEBAR = document.getElementById("progBar");
+
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Frankreich_Bahnhof.mp3'],
@@ -41,6 +43,8 @@ window.addEventListener('scroll',function(){
     console.log(value)
 
     startSound();
+    startTimeBar(sound.duration());
+
     if(value > 200){
         $("#text").fadeIn(1000);
     }
@@ -59,3 +63,5 @@ let startSound = () => {
         console.log("Sound is: ", sound.playing());
     }
 }
+
+let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
