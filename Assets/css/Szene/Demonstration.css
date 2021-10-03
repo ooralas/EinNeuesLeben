@@ -22,7 +22,19 @@ html ::-webkit-scrollbar-thumb {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-.background img {
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #zeichnungenContainer #background {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -30,7 +42,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 0;
 }
 
-.crowd img {
+#main #zeichnungenContainer #crowd {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -38,7 +50,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
-.soldier1 img {
+#main #zeichnungenContainer #soldier1 {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -46,7 +58,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
-.soldier2 img {
+#main #zeichnungenContainer #soldier2 {
   top: 30%;
   left: 20%;
   width: 60%;
@@ -54,12 +66,62 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
-.rahmen img {
+#main #zeichnungenContainer #rahmen {
   top: 30%;
   left: 20%;
   width: 60%;
   position: fixed;
   z-index: 4;
+}
+
+#main #zeichnungenContainer #rahmen2 {
+  top: 30%;
+  left: 20%;
+  width: 60.1%;
+  position: fixed;
+  z-index: 4;
+}
+
+#main #text {
+  color: white;
+  position: fixed;
+  font-size: 1.3vw;
+  left: 35%;
+  top: 12%;
+  width: 30%;
+  font-family: 'Caveat Brush', cursive;
+  /* Landscape phones and down */
+  /* Landscape phone to portrait tablet */
+}
+
+@media (max-width: 480px) {
+  #main #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 640px) {
+  #main #text {
+    top: 23%;
+  }
+}
+
+@media (max-width: 731px) {
+  #main #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 800px) {
+  #main #text {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #main #text {
+    top: 19%;
+  }
 }
 
 a img {
