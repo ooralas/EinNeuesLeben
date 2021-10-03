@@ -41,6 +41,9 @@ window.addEventListener('scroll',function(){
     console.log(value)
 
     startSound();
+    if(value > 200){
+        $("#text").fadeIn(1000);
+    }
 
     if(value > 1000){
         $("#nextBtTrigger").trigger("click");

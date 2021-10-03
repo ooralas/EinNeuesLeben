@@ -18,6 +18,46 @@ html {
      }
 }
 
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #text {
+        display:none;
+        color: white;
+        position: fixed;
+        font-size: 1.2vw;
+        top: 20%;
+        width: 42%;
+        font-family: 'Caveat Brush', cursive;
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+            top: 21%;
+        }
+
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 640px) { 
+            top: 23%;
+        }
+
+        @media (max-width: 731px) { 
+            top: 21%;
+        }
+
+        @media (max-width: 800px) { 
+            top: 19%;
+        }
+
+        @media (max-width: 1200px) { 
+            top: 19%;
+        }
+    }
+}
+
 .background {
     img {
         top: 30%;
@@ -84,6 +124,14 @@ html {
         z-index: 3;
         
     }
+}
+
+#echteRahmen {
+    width: 70.1%;
+    top: 30%;
+    left: 15%;
+    position: fixed;
+    z-index: 3;
 }
 
 a {
