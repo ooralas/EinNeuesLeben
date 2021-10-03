@@ -88,8 +88,8 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   font-size: 1.1vw;
   left: 35%;
-  top: 12%;
-  width: 30%;
+  top: 14%;
+  width: 34%;
   font-family: 'Caveat Brush', cursive;
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
@@ -136,6 +136,42 @@ html ::-webkit-scrollbar-thumb {
 
 #main #text a:hover {
   color: #d3532c;
+}
+
+#main #timeBar {
+  background-color: rgba(116, 116, 116, 0.212);
+  width: 6px;
+  height: 450px;
+  position: absolute;
+  left: 15%;
+  top: 39%;
+  border-radius: 10px;
+  position: fixed;
+  overflow: hidden;
+}
+
+#main #timeBar #progBar {
+  width: 100%;
+  height: 0%;
+  background-color: rgba(114, 114, 114, 0.383);
+}
+
+@-webkit-keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 a img {

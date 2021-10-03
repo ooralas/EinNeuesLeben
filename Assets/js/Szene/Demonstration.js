@@ -3,6 +3,7 @@
 const CROWD = document.getElementById("crowd");
 const SOLDIER1 = document.getElementById("soldier1");
 const SOLDIER2 = document.getElementById("soldier2");
+const PROGRESSIVEBAR = document.getElementById("progBar");
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Demonstration.mp3'],
@@ -74,6 +75,9 @@ window.addEventListener('scroll',function(){
     
     console.log(value);
     startSound();
+    console.log("soundDur",sound.duration())
+    PROGRESSIVEBAR.style.animation = "fillTimeBar " + sound.duration()+ "s" + " linear forwards"
+
 
     if(value > 500){
         $("#text").fadeIn(1000);
