@@ -128,6 +128,42 @@ html body #main #text {
   }
 }
 
+html body #main #timeBar {
+  background-color: rgba(116, 116, 116, 0.212);
+  width: 6px;
+  height: 450px;
+  left: 12%;
+  top: 33%;
+  border-radius: 10px;
+  position: fixed;
+  overflow: hidden;
+  z-index: 3;
+}
+
+html body #main #timeBar #progBar {
+  width: 100%;
+  height: 0%;
+  background-color: rgba(114, 114, 114, 0.383);
+}
+
+@-webkit-keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
 html body a img {
   position: fixed;
   width: 6%;
