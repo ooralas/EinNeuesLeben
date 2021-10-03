@@ -71,6 +71,14 @@
                 position: fixed;
             }
         }
+
+        #rahmen {
+            width: 70%;
+            top: 30%;
+            left: 15%;
+            position: fixed;
+            z-index: 3;
+        }
     
         a {
             img{

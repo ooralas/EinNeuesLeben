@@ -61,6 +61,14 @@ html body .balkenRechts img {
   position: fixed;
 }
 
+html body #rahmen {
+  width: 70%;
+  top: 30%;
+  left: 15%;
+  position: fixed;
+  z-index: 3;
+}
+
 html body a img {
   position: fixed;
   width: 6%;
