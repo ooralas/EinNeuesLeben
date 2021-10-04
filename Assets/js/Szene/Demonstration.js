@@ -1,5 +1,4 @@
 
-//const SOLDIERS = document.getElementById("soldiers");
 const CROWD = document.getElementById("crowd");
 const SOLDIER1 = document.getElementById("soldier1");
 const SOLDIER2 = document.getElementById("soldier2");
@@ -12,13 +11,18 @@ var sound = new Howl({
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
-        $("img").animate({
+        $("#nextBt").animate({
             right: 20 + "px",
-            opacity: 1,
+            opacity: 0.3,
             
         },900);
     });
+    $("#backBt").fadeIn(3000);
 });
+
+
+
+
 
 window.addEventListener('scroll',function(){
     
@@ -81,6 +85,7 @@ window.addEventListener('scroll',function(){
 
 
     if(value > 500){
+        $("#backBt").fadeIn(1000);
         $("#text").fadeIn(1000);
     }
 

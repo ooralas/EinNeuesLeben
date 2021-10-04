@@ -87,18 +87,28 @@ html ::-webkit-scrollbar-thumb {
   z-index: 4;
 }
 
-a img {
+#nextBt {
   position: fixed;
-  width: 6%;
+  width: 4%;
   top: 50%;
-  z-index: 5;
+  z-index: 4;
   opacity: 0;
+}
+
+#backBt {
+  position: fixed;
+  width: 4%;
+  left: 20px;
+  top: 50%;
+  z-index: 4;
+  display: none;
+  opacity: 0.3;
 }
 
 #rahmen {
   top: 30%;
   left: 20%;
-  width: 60.1%;
+  width: 60%;
   position: fixed;
   z-index: 3;
 }
