@@ -30,7 +30,7 @@ html {
         color: white;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
-        top: 19.5%;
+        top: 18%;
         width: 42%;
         font-family: $szeneTextFont;
 
@@ -138,13 +138,33 @@ html {
 #timeBar {
     background-color: rgba(116, 116, 116, 0.212);
     width: 6px;
-    height: 420px;
+    height: 41%;
     left: 10%;
-    top: 32%;
+    top: 33%;
     border-radius: 10px;
     position: fixed;
     overflow: hidden;
     z-index: 5;
+
+    @media ( max-width: 1440px ) {
+        top: 32%;
+        height: 37%;
+    }
+    
+    @media ( max-width: 1366px ) {
+        top: 30%;
+        height: 35%;
+    }
+
+    @media ( max-width: 1092px ) {
+        top: 31%;
+        height: 28%;
+    }
+
+    @media ( max-width: 860px ) {
+        top: 31%;
+        height: 22%;
+    }
  
     
     #progBar {

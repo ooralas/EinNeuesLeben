@@ -42,7 +42,7 @@ html ::-webkit-scrollbar-thumb {
   color: white;
   position: fixed;
   font-size: 1.3vw;
-  top: 19.5%;
+  top: 18%;
   width: 42%;
   font-family: "Indie Flower", cursive;
   /* Landscape phones and down */
@@ -138,13 +138,41 @@ html ::-webkit-scrollbar-thumb {
 #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 420px;
+  height: 41%;
   left: 10%;
-  top: 32%;
+  top: 33%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
   z-index: 5;
+}
+
+@media (max-width: 1440px) {
+  #timeBar {
+    top: 32%;
+    height: 37%;
+  }
+}
+
+@media (max-width: 1366px) {
+  #timeBar {
+    top: 30%;
+    height: 35%;
+  }
+}
+
+@media (max-width: 1092px) {
+  #timeBar {
+    top: 31%;
+    height: 28%;
+  }
+}
+
+@media (max-width: 860px) {
+  #timeBar {
+    top: 31%;
+    height: 22%;
+  }
 }
 
 #timeBar #progBar {
