@@ -132,6 +132,9 @@ html {
     left: 15%;
     position: fixed;
     z-index: 3;
+    @media ( max-width: 1280px ) {
+        width: 72%;
+    }
 }
 
 
@@ -154,6 +157,11 @@ html {
     @media ( max-width: 1366px ) {
         top: 30%;
         height: 35%;
+    }
+
+    @media ( max-width: 1280px ) {
+        top: 33%;
+        height: 46%;
     }
 
     @media ( max-width: 1092px ) {

@@ -135,6 +135,12 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  #echteRahmen {
+    width: 72%;
+  }
+}
+
 #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
@@ -158,6 +164,13 @@ html ::-webkit-scrollbar-thumb {
   #timeBar {
     top: 30%;
     height: 35%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #timeBar {
+    top: 33%;
+    height: 46%;
   }
 }
 
