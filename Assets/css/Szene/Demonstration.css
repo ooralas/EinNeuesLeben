@@ -141,13 +141,41 @@ html ::-webkit-scrollbar-thumb {
 #main #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 450px;
+  height: 46%;
   position: absolute;
   left: 15%;
   top: 39%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
+}
+
+@media (max-width: 1441px) {
+  #main #timeBar {
+    top: 35%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #main #timeBar {
+    top: 29%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1092px) {
+  #main #timeBar {
+    top: 33%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 860px) {
+  #main #timeBar {
+    top: 33%;
+    height: 250px;
+  }
 }
 
 #main #timeBar #progBar {
