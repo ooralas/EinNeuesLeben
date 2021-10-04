@@ -68,7 +68,7 @@ html ::-webkit-scrollbar-thumb {
 #container #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 500px;
+  height: 49%;
   left: 15%;
   top: 34%;
   border-radius: 10px;
@@ -81,6 +81,27 @@ html ::-webkit-scrollbar-thumb {
   width: 100%;
   height: 0%;
   background-color: rgba(114, 114, 114, 0.383);
+}
+
+@media (max-width: 1440px) {
+  #container #timeBar {
+    top: 32%;
+    height: 42%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container #timeBar {
+    top: 31%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  #container #timeBar {
+    top: 32%;
+    height: 22%;
+  }
 }
 
 @-webkit-keyframes fillTimeBar {
