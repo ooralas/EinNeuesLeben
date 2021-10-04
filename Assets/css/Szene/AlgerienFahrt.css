@@ -67,13 +67,40 @@ html ::-webkit-scrollbar-thumb {
 #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 450px;
+  height: 45%;
   position: absolute;
   left: 15%;
   top: 34%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
+}
+
+@media (max-width: 1441px) {
+  #timeBar {
+    top: 31%;
+  }
+}
+
+@media (max-width: 1366px) {
+  #timeBar {
+    top: 31%;
+    height: 41%;
+  }
+}
+
+@media (max-width: 1092px) {
+  #timeBar {
+    top: 31%;
+    height: 33%;
+  }
+}
+
+@media (max-width: 860px) {
+  #timeBar {
+    top: 31%;
+    height: 25%;
+  }
 }
 
 #timeBar #progBar {
