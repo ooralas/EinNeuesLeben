@@ -115,13 +115,29 @@ a {
 #timeBar {
     background-color: rgba(116, 116, 116, 0.212);
     width: 6px;
-    height: 570px;
+    height: 56%;
     left: 15%;
     top: 34%;
     border-radius: 10px;
     position: fixed;
     overflow: hidden;
     z-index: 4;
+
+    @media ( max-width: 1440px ) {
+        top: 31%;
+        height: 52%;
+    }
+    
+
+    @media ( max-width: 1024px ) {
+        top: 31%;
+        height: 38%;
+    }
+
+    @media ( max-width: 768px ) {
+        top: 31%;
+        height: 25%;
+    }
     
     #progBar {
         width: 100%;
