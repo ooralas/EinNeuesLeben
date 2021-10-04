@@ -47,6 +47,12 @@ html ::-webkit-scrollbar-thumb {
   z-index: 0;
 }
 
+@media (max-width: 1280px) {
+  #container #background {
+    top: 20%;
+  }
+}
+
 #container #rahmen {
   top: 30%;
   left: 25%;
@@ -55,14 +61,25 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  #container #rahmen {
+    top: 20%;
+  }
+}
+
 #container #text {
   display: none;
   color: white;
   position: fixed;
   font-size: 1.2vw;
   top: 22%;
-  width: 37%;
   font-family: "Indie Flower", cursive;
+}
+
+@media (max-width: 1280px) {
+  #container #text {
+    top: 15%;
+  }
 }
 
 #timeBar {
@@ -70,7 +87,7 @@ html ::-webkit-scrollbar-thumb {
   width: 6px;
   height: 45%;
   position: absolute;
-  left: 15%;
+  left: 17%;
   top: 34%;
   border-radius: 10px;
   position: fixed;
@@ -101,6 +118,13 @@ html ::-webkit-scrollbar-thumb {
   #timeBar {
     top: 31%;
     height: 25%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #timeBar {
+    top: 26%;
+    height: 49%;
   }
 }
 
