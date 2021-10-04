@@ -11,12 +11,13 @@ var sound = new Howl({
 
 $(document).ready(function(){
     $("#nextBtTrigger").click(function(){
-        $("img").animate({
+        $("#nextBt").animate({
             right: 20 + "px",
-            opacity: 1,
+            opacity: 0.3,
             
         },900);
     });
+    $("#backBt").fadeIn(3000);
 });
 
 
