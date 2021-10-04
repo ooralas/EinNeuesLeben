@@ -28,10 +28,10 @@ html {
         display:none;
         color: white;
         position: fixed;
-        font-size: 1vw;
-        top: 20%;
+        font-size: $szeneTextFontSize;
+        top: 19%;
         width: 37%;
-        font-family: 'Caveat Brush', cursive;
+        font-family: $szeneTextFont;
 }
 
 }

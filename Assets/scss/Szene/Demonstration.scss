@@ -87,11 +87,11 @@ html {
         display:none;
         color: white;
         position: fixed;
-        font-size: 1.1vw;
+        font-size: $szeneTextFontSize;
         left: 35%;
         top: 14%;
         width: 34%;
-        font-family: 'Caveat Brush', cursive;
+        font-family: $szeneTextFont;
 
         /* Landscape phones and down */
         @media (max-width: 480px) { 

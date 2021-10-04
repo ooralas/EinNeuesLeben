@@ -1,3 +1,5 @@
+@import "../_font.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -76,11 +78,11 @@ html {
             display:none;
             color: white;
             position: fixed;
-            font-size: 1.3vw;
+            font-size: $szeneTextFontSize + 0.1;
             left: 35%;
-            top: 12%;
+            top: 30%;
             width: 30%;
-            font-family: 'Caveat Brush', cursive;
+            font-family: $szeneTextFont;
 
             /* Landscape phones and down */
             @media (max-width: 480px) { 

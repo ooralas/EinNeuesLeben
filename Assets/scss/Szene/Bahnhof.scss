@@ -29,10 +29,10 @@ html {
         display:none;
         color: white;
         position: fixed;
-        font-size: 1.2vw;
-        top: 20%;
+        font-size: $szeneTextFontSize + 0.1;
+        top: 19.5%;
         width: 42%;
-        font-family: 'Caveat Brush', cursive;
+        font-family: $szeneTextFont;
 
         /* Landscape phones and down */
         @media (max-width: 480px) { 
