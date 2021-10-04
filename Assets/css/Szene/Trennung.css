@@ -31,42 +31,72 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main #zeichnungenContainer #background {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
   z-index: 0;
 }
 
+@media (max-width: 1280px) {
+  #main #zeichnungenContainer #background {
+    top: 20%;
+  }
+}
+
 #main #zeichnungenContainer #diallo {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
   z-index: 1;
 }
 
+@media (max-width: 1280px) {
+  #main #zeichnungenContainer #diallo {
+    top: 20%;
+  }
+}
+
 #main #zeichnungenContainer #eltern {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
   z-index: 2;
 }
 
+@media (max-width: 1280px) {
+  #main #zeichnungenContainer #eltern {
+    top: 20%;
+  }
+}
+
 #main #zeichnungenContainer #rahmen {
-  top: 30%;
+  top: 20%;
   left: 10%;
   width: 60%;
   position: fixed;
   z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  #main #zeichnungenContainer #rahmen {
+    top: 20%;
+  }
+}
+
 #main #zeichnungenContainer #rahmen2 {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60.1%;
   position: fixed;
@@ -74,15 +104,20 @@ html ::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+@media (max-width: 1280px) {
+  #main #zeichnungenContainer #rahmen2 {
+    top: 20%;
+  }
+}
+
 #main #text {
   display: none;
   color: white;
   position: fixed;
   font-size: 1.2vw;
-  left: 35%;
-  top: 10%;
-  width: 30%;
+  width: 40%;
   font-family: "Indie Flower", cursive;
+  top: 6%;
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
 }
@@ -111,12 +146,18 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 1280px) {
+  #main #text {
+    top: 5%;
+  }
+}
+
 #main #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
   height: 57%;
   left: 15%;
-  top: 33%;
+  top: 24%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
@@ -127,6 +168,13 @@ html ::-webkit-scrollbar-thumb {
   #main #timeBar {
     top: 33%;
     height: 48%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #main #timeBar {
+    height: 60%;
+    top: 24%;
   }
 }
 

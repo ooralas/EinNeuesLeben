@@ -41,7 +41,7 @@ html {
         
 
         #background {
-            top: 30%;
+            top: 20%;
             left: 20%;
             width: 60%;
             position: fixed;
@@ -51,7 +51,7 @@ html {
         }
     
         #crowd {
-                top: 30%;
+                top: 20%;
                 left: 20%;
                 width: 60%;
                 position: fixed;
@@ -62,7 +62,7 @@ html {
     
     
         #soldier1 {
-                top: 30%;
+                top: 20%;
                 left: 20%;
                 width: 60%;
                 position: fixed;
@@ -71,7 +71,7 @@ html {
         }
     
         #soldier2 {
-                top: 30%;
+                top: 20%;
                 left: 20%;
                 width: 60%;
                 position: fixed;
@@ -80,18 +80,16 @@ html {
         }
     
         #rahmen {
-                top: 30%;
+                top: 20%;
                 left: 20%;
                 width: 60%;
                 position: fixed;
                 z-index: 4;
                 @include mediaQueryByLabtop;
-
-                
         }
 
         #rahmen2   {
-            top: 30%;
+            top: 20%;
             left: 20%;
             width: 60%;
             position: fixed;
@@ -106,9 +104,8 @@ html {
         color: white;
         position: fixed;
         font-size: $szeneTextFontSize;
-        left: 35%;
-        top: 14%;
-        width: 34%;
+        top: 5%;
+        width: 37%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
@@ -139,11 +136,13 @@ html {
         }
 
         a {
-          text-decoration: none;  
+          text-decoration: none;
+          color: inherit;  
         }
         a:visited {
             text-decoration: none;
             color: inherit;
+            color: burlywood;
         }
         a:hover {
             color: rgb(211, 83, 44);  
@@ -153,10 +152,10 @@ html {
     #timeBar {
         background-color: rgba(116, 116, 116, 0.212);
         width: 6px;
-        height: 46%;
+        height: 55%;
         position: absolute;
         left: 15%;
-        top: 39%;
+        top: 24%;
         border-radius: 10px;
         position: fixed;
         overflow: hidden;

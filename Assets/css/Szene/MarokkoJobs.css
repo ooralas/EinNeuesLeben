@@ -42,7 +42,7 @@ html ::-webkit-scrollbar-thumb {
   color: white;
   position: fixed;
   font-size: 1.2vw;
-  top: 19%;
+  top: 9%;
   width: 37%;
   font-family: "Indie Flower", cursive;
 }
@@ -54,7 +54,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .background img {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -68,7 +68,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .background2 img {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -82,7 +82,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .farbe img {
-  top: 30%;
+  top: 20%;
   left: -1%;
   width: 60%;
   position: fixed;
@@ -96,7 +96,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .diallo img {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -124,7 +124,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 #rahmen {
-  top: 30%;
+  top: 20%;
   left: 20%;
   width: 60%;
   position: fixed;
@@ -142,7 +142,7 @@ html ::-webkit-scrollbar-thumb {
   width: 6px;
   height: 56%;
   left: 15%;
-  top: 34%;
+  top: 24%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
