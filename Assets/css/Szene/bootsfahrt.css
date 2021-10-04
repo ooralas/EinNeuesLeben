@@ -61,12 +61,24 @@ html body #main #zeichnungenContainer #backgroundIMG {
   }
 }
 
+@media (max-width: 1280px) {
+  html body #main #zeichnungenContainer #backgroundIMG {
+    top: 25%;
+  }
+}
+
 html body #main #zeichnungenContainer #bootIMG {
   left: 0%;
   top: 30%;
   width: 80%;
   z-index: 2;
   position: fixed;
+}
+
+@media (max-width: 1280px) {
+  html body #main #zeichnungenContainer #bootIMG {
+    top: 25%;
+  }
 }
 
 html body #main #zeichnungenContainer #balkenLinks {
@@ -77,12 +89,24 @@ html body #main #zeichnungenContainer #balkenLinks {
   position: fixed;
 }
 
+@media (max-width: 1280px) {
+  html body #main #zeichnungenContainer #balkenLinks {
+    top: 25%;
+  }
+}
+
 html body #main #zeichnungenContainer #balkenRechts {
   left: 85%;
   top: 30%;
   width: 80%;
   z-index: 3;
   position: fixed;
+}
+
+@media (max-width: 1280px) {
+  html body #main #zeichnungenContainer #balkenRechts {
+    top: 25%;
+  }
 }
 
 html body #main #zeichnungenContainer #rahmen {
@@ -96,6 +120,12 @@ html body #main #zeichnungenContainer #rahmen {
 @media (max-width: 1440px) {
   html body #main #zeichnungenContainer #rahmen {
     width: 71%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html body #main #zeichnungenContainer #rahmen {
+    top: 25%;
   }
 }
 
@@ -142,6 +172,12 @@ html body #main #text {
   }
 }
 
+@media (max-width: 1280px) {
+  html body #main #text {
+    top: 11%;
+  }
+}
+
 html body #main #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
@@ -165,6 +201,13 @@ html body #main #timeBar {
   html body #main #timeBar {
     top: 31%;
     height: 41%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html body #main #timeBar {
+    height: 53%;
+    top: 28%;
   }
 }
 
