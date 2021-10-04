@@ -47,12 +47,24 @@ html ::-webkit-scrollbar-thumb {
   font-family: "Indie Flower", cursive;
 }
 
+@media (max-width: 1280px) {
+  #main #text {
+    top: 8%;
+  }
+}
+
 .background img {
   top: 30%;
   left: 20%;
   width: 60%;
   position: fixed;
   z-index: 0;
+}
+
+@media (max-width: 1280px) {
+  .background img {
+    top: 20%;
+  }
 }
 
 .background2 img {
@@ -63,12 +75,24 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  .background2 img {
+    top: 20%;
+  }
+}
+
 .farbe img {
   top: 30%;
   left: -1%;
   width: 60%;
   position: fixed;
   z-index: 2;
+}
+
+@media (max-width: 1280px) {
+  .farbe img {
+    top: 20%;
+  }
 }
 
 .diallo img {
@@ -79,6 +103,12 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+@media (max-width: 1280px) {
+  .diallo img {
+    top: 20%;
+  }
+}
+
 .balken img {
   top: 20%;
   left: -50%;
@@ -87,22 +117,10 @@ html ::-webkit-scrollbar-thumb {
   z-index: 4;
 }
 
-#nextBt {
-  position: fixed;
-  width: 4%;
-  top: 50%;
-  z-index: 4;
-  opacity: 0;
-}
-
-#backBt {
-  position: fixed;
-  width: 4%;
-  left: 20px;
-  top: 50%;
-  z-index: 4;
-  display: none;
-  opacity: 0.3;
+@media (max-width: 1280px) {
+  .balken img {
+    top: 20%;
+  }
 }
 
 #rahmen {
@@ -111,6 +129,12 @@ html ::-webkit-scrollbar-thumb {
   width: 60%;
   position: fixed;
   z-index: 3;
+}
+
+@media (max-width: 1280px) {
+  #rahmen {
+    top: 20%;
+  }
 }
 
 #timeBar {
@@ -129,6 +153,13 @@ html ::-webkit-scrollbar-thumb {
   #timeBar {
     top: 31%;
     height: 52%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #timeBar {
+    height: 60%;
+    top: 24%;
   }
 }
 
@@ -168,6 +199,24 @@ html ::-webkit-scrollbar-thumb {
   100% {
     height: 100%;
   }
+}
+
+#nextBt {
+  position: fixed;
+  width: 4%;
+  top: 50%;
+  z-index: 4;
+  opacity: 0;
+}
+
+#backBt {
+  position: fixed;
+  width: 4%;
+  left: 20px;
+  top: 50%;
+  z-index: 4;
+  display: none;
+  opacity: 0.3;
 }
 
 .hide {

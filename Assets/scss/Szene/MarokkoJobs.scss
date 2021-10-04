@@ -1,5 +1,13 @@
 @import "../_font.scss";
 
+
+// MediaQuery der Szene bei 1280x600
+@mixin mediaQueryByLabtop {
+    @media ( max-width: 1280px ) {
+        top: 20%;
+    }
+} 
+
 html {
     background-color: rgb(0, 0, 0);
     
@@ -32,6 +40,10 @@ html {
         top: 19%;
         width: 37%;
         font-family: $szeneTextFont;
+
+        @media ( max-width: 1280px ) {
+            top: 8%;
+        }
 }
 
 }
@@ -42,6 +54,8 @@ html {
         width: 60%;
         position: fixed;
         z-index: 0;
+
+        @include mediaQueryByLabtop;
         
         
     }
@@ -55,7 +69,7 @@ html {
         position: fixed;
         z-index: 3;
         
-        
+        @include mediaQueryByLabtop;
     }
 }
 
@@ -67,6 +81,7 @@ html {
         position: fixed;
         z-index: 2;
         
+        @include mediaQueryByLabtop;
     }
 }
 
@@ -78,6 +93,7 @@ html {
         position: fixed;
         z-index: 3;
         
+        @include mediaQueryByLabtop;
     }
 }
 
@@ -90,28 +106,10 @@ html {
         position: fixed;
         z-index: 4;
         
+        @include mediaQueryByLabtop;
     }
 }
 
-
-#nextBt{
-    position: fixed; 
-    width: 4%;
-    top:50%;
-    z-index: 4;
-    opacity: 0;
-}
-
-#backBt{
-    position: fixed; 
-        width: 4%;
-        left: 20px;
-        top:50%;
-        z-index: 4;
-        display: none;
-        opacity: 0.3;
-        
-    }
 
 #rahmen {
         top: 30%;
@@ -119,6 +117,8 @@ html {
         width: 60%;
         position: fixed;
         z-index: 3;
+
+        @include mediaQueryByLabtop;
 }
 
 #timeBar {
@@ -137,6 +137,11 @@ html {
         height: 52%;
     }
     
+    @media ( max-width: 1280px ) {
+        height: 60%; 
+        top: 24%;
+    }
+
 
     @media ( max-width: 1024px ) {
         top: 31%;
@@ -166,6 +171,25 @@ html {
     
 }
 
+
+#nextBt{
+    position: fixed; 
+    width: 4%;
+    top:50%;
+    z-index: 4;
+    opacity: 0;
+}
+
+#backBt{
+    position: fixed; 
+        width: 4%;
+        left: 20px;
+        top:50%;
+        z-index: 4;
+        display: none;
+        opacity: 0.3;
+        
+    }
 
 .hide{
     opacity: 0;
