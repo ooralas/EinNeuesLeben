@@ -30,10 +30,8 @@ html {
 
 
 .container {
-
     display: flex;
     justify-content: center;
-    align-items: center;
     align-items: center;
 
     #background {
@@ -51,12 +49,12 @@ html {
         color: white;
         position: fixed;
         font-size: $szeneTextFontSize;
-        top: 14%;
-        // width: 37%;
+        top: 7%;
+        width: 56%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
-            top: 14%;
+            top: 7%;
             
         }
 
