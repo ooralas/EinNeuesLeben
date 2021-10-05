@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+html {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 300vh;
+}
+
+html ::-webkit-scrollbar {
+  width: 1px;
+}
+
+html ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+html ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #background {
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  position: fixed;
+  z-index: 0;
+}
+
+@media (max-width: 1280px) {
+  .container #background {
+    top: 20%;
+  }
+}
+
+.container #text {
+  display: none;
+  color: white;
+  position: fixed;
+  font-size: 1.2vw;
+  top: 11%;
+  width: 50%;
+  font-family: "Indie Flower", cursive;
+  /* Landscape phones and down */
+  /* Landscape phone to portrait tablet */
+}
+
+@media (max-width: 1280px) {
+  .container #text {
+    font-size: 1.3vw;
+    top: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container #text {
+    top: 23%;
+  }
+}
+
+@media (max-width: 731px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container #text {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container #text {
+    top: 19%;
+  }
+}
+
+.container #text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container #text a:visited {
+  text-decoration: none;
+  color: inherit;
+  color: burlywood;
+}
+
+.container #text a:hover {
+  color: #d3532c;
+}
+
+.container #timeBar {
+  background-color: rgba(116, 116, 116, 0.212);
+  width: 6px;
+  height: 55%;
+  position: absolute;
+  left: 15%;
+  top: 24%;
+  border-radius: 10px;
+  position: fixed;
+  overflow: hidden;
+}
+
+@media (max-width: 1441px) {
+  .container #timeBar {
+    top: 35%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container #timeBar {
+    top: 29%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1092px) {
+  .container #timeBar {
+    top: 33%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 860px) {
+  .container #timeBar {
+    top: 33%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container #timeBar {
+    top: 24%;
+    height: 60%;
+  }
+}
+
+.container #timeBar #progBar {
+  width: 100%;
+  height: 0%;
+  background-color: rgba(114, 114, 114, 0.383);
+}
+
+@-webkit-keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fillTimeBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+#nextBt {
+  position: fixed;
+  width: 4%;
+  top: 50%;
+  z-index: 4;
+  opacity: 0;
+}
+
+#backBt {
+  position: fixed;
+  width: 4%;
+  left: 20px;
+  top: 50%;
+  z-index: 4;
+  display: none;
+  opacity: 0.3;
+}
+
+.hide {
+  opacity: 0;
+}
