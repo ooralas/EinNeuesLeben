@@ -134,9 +134,8 @@ html body #main #text {
   color: white;
   position: fixed;
   font-size: 1.3vw;
-  left: 35%;
-  top: 16%;
-  width: 30%;
+  top: 17%;
+  width: 55%;
   font-family: "Indie Flower", cursive;
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
@@ -174,7 +173,7 @@ html body #main #text {
 
 @media (max-width: 1280px) {
   html body #main #text {
-    top: 11%;
+    top: 10%;
   }
 }
 
