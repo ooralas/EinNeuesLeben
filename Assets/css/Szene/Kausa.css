@@ -57,16 +57,17 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: white;
   position: fixed;
-  top: 12%;
+  top: 10%;
+  width: 33%;
   font-family: "Indie Flower", cursive;
-  font-size: 1.2vw;
+  font-size: 1.12vw;
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
 }
 
 @media (max-width: 1280px) {
   .container #text {
-    top: 11%;
+    top: 8.5%;
   }
 }
 
