@@ -1,0 +1,87 @@
+@import "../_font.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+
+ 
+  #headLine{
+    color: rgb(0, 0, 0);
+    font-size: 6vw;
+    font-family: $startSeiteFont;
+    margin-bottom: 2%;
+  }
+
+  #ueberProjekt {
+    font-family: $startSeiteFont;
+    font-size: 1vw;
+  }
+
+  #teilnehmer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center ;
+      
+      width: 20%;
+      margin-top: 6%;
+    
+      font-family: $startSeiteFont;
+      font-size: 1vw;
+
+      #zeichnen {
+          margin-top: -7%;
+        list-style: none;
+      }
+
+      #entwicklung{
+        list-style: none;
+      }
+  }
+
+  #unterstuetztVon {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+
+    p {
+        margin-top: -8%;
+        // background-color: red;
+        height: 100%;
+        width: 60%;
+        font-family: $startSeiteFont;
+        font-size: 0.6vw;
+        font-weight: 600;
+    }
+
+    .logo {
+
+        width: 100%;
+        padding: 0px;
+        
+    }
+  }
+
+  #storyMap {
+      
+  }
+}
+
+//hindert den User Text zu selectieren
+.disable_select {
+  user-select: none;
+  -ms-user-select:none;
+}
+

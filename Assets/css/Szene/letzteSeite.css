@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+#main #headLine {
+  color: black;
+  font-size: 6vw;
+  font-family: "Laila", sans-serif;
+  margin-bottom: 2%;
+}
+
+#main #ueberProjekt {
+  font-family: "Laila", sans-serif;
+  font-size: 1vw;
+}
+
+#main #teilnehmer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin-top: 6%;
+  font-family: "Laila", sans-serif;
+  font-size: 1vw;
+}
+
+#main #teilnehmer #zeichnen {
+  margin-top: -7%;
+  list-style: none;
+}
+
+#main #teilnehmer #entwicklung {
+  list-style: none;
+}
+
+#main #unterstuetztVon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+#main #unterstuetztVon p {
+  margin-top: -8%;
+  height: 100%;
+  width: 60%;
+  font-family: "Laila", sans-serif;
+  font-size: 0.6vw;
+  font-weight: 600;
+}
+
+#main #unterstuetztVon .logo {
+  width: 100%;
+  padding: 0px;
+}
+
+.disable_select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+}
