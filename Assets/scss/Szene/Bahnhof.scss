@@ -30,8 +30,8 @@ html {
         color: white;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
-        top: 18%;
-        width: 42%;
+        top: 20%;
+        width: 58%;
         font-family: $szeneTextFont;
 
         /* Landscape phones and down */
@@ -54,6 +54,13 @@ html {
 
         @media (max-width: 1200px) { 
             top: 19%;
+        }
+
+        @media ( max-width: 1280px ) {
+            width: 58%;
+            top: 18%;
+            font-size: $szeneTextFontSize + 0.3;
+            
         }
     }
 }
