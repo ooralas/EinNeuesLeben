@@ -4,7 +4,7 @@ const PROGRESSIVEBAR = document.getElementById("progBar");
 
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Bootsfahrt_szene.mp3'],
+    src: ['https://www.mboxdrive.com/Bahnhof.mp3'],
     html5:true
   }); 
 

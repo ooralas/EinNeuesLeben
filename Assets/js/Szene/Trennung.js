@@ -5,7 +5,7 @@ const PROGRESSIVEBAR = document.getElementById("progBar");
 
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Trennung_von_der_Familie.mp3'],
+    src: ['https://www.mboxdrive.com/Trennung.mp3.mp3'],
     html5:true
 });
 
