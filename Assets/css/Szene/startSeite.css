@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#main #headLine {
+  color: white;
+  font-size: 6vw;
+  font-family: "Laila", sans-serif;
+  margin-bottom: 2%;
+}
+
+#main #karte {
+  width: 50%;
+}
+
+#main #startBt {
+  margin-top: 2%;
+  font-size: 1.7vw;
+  color: white;
+  font-family: "Laila", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#main #startBt:hover {
+  -webkit-animation: startBtHover 1s ease-in forwards;
+          animation: startBtHover 1s ease-in forwards;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
+@keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
+.disable_select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+}
