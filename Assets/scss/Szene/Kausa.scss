@@ -1,5 +1,13 @@
 @import "../_font.scss";
 
+
+// MediaQuery der Szene bei 1280x600
+@mixin mediaQueryByLabtop {
+    @media ( max-width: 1280px ) {
+        top: 20%;
+    }
+}
+
 html {
     background-color: black;
     margin: 0;
@@ -21,7 +29,7 @@ html {
 
 }
 
-#container {
+.container {
     
     display: flex;
     flex-direction: column;
@@ -35,6 +43,9 @@ html {
         width: 35%;
         position: fixed;
         z-index: 0;
+
+        @include mediaQueryByLabtop;        
+
     }
 
 
@@ -43,10 +54,37 @@ html {
         display:none;
         color: white;
         position: fixed;
-        font-size: 1.3vw;
         top: 12%;
-        width: 37%;
-        font-family: 'Caveat Brush', cursive;
+        // width: 35%;
+        font-family: $szeneTextFont;
+        font-size: $szeneTextFontSize;
+
+        @media ( max-width: 1280px ) {
+            top: 11%;
+        }
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) { 
+            top: 21%;
+        }
+
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 640px) { 
+            top: 23%;
+        }
+
+        @media (max-width: 731px) { 
+            top: 21%;
+        }
+
+        @media (max-width: 800px) { 
+            top: 19%;
+        }
+
+        @media (max-width: 1200px) { 
+            top: 19%;
+        }      
+
     }
 
    
@@ -56,13 +94,39 @@ html {
 #timeBar {
     background-color: rgba(116, 116, 116, 0.212);
     width: 6px;
-    height: 450px;
+    height: 52%;
     position: absolute;
-    left: 15%;
-    top: 34%;
+    left: 23%;
+    top: 25%;
     border-radius: 10px;
     position: fixed;
     overflow: hidden;
+
+    @media ( max-width: 1441px ) {
+        top: 35%;
+        height: 380px;
+    }
+    
+    @media ( max-width: 1366px ) {
+        top: 29%;
+        height: 400px;
+    }
+
+    @media ( max-width: 1092px ) {
+        top: 33%;
+        height: 300px;
+    }
+
+    @media ( max-width: 860px ) {
+        top: 33%;
+        height: 250px;
+    }
+
+    @media ( max-width: 1280px ) {
+        top: 25%;
+        height: 58%;
+        
+    }
  
     
     #progBar {

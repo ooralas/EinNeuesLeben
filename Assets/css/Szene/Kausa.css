@@ -23,7 +23,7 @@ html ::-webkit-scrollbar-thumb {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-#container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@ html ::-webkit-scrollbar-thumb {
           align-items: center;
 }
 
-#container #background {
+.container #background {
   top: 20%;
   left: 32.5%;
   width: 35%;
@@ -47,26 +47,104 @@ html ::-webkit-scrollbar-thumb {
   z-index: 0;
 }
 
-#container #text {
+@media (max-width: 1280px) {
+  .container #background {
+    top: 20%;
+  }
+}
+
+.container #text {
   display: none;
   color: white;
   position: fixed;
-  font-size: 1.3vw;
   top: 12%;
-  width: 37%;
-  font-family: 'Caveat Brush', cursive;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.2vw;
+  /* Landscape phones and down */
+  /* Landscape phone to portrait tablet */
+}
+
+@media (max-width: 1280px) {
+  .container #text {
+    top: 11%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container #text {
+    top: 23%;
+  }
+}
+
+@media (max-width: 731px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container #text {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container #text {
+    top: 19%;
+  }
 }
 
 #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 450px;
+  height: 52%;
   position: absolute;
-  left: 15%;
-  top: 34%;
+  left: 23%;
+  top: 25%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
+}
+
+@media (max-width: 1441px) {
+  #timeBar {
+    top: 35%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #timeBar {
+    top: 29%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1092px) {
+  #timeBar {
+    top: 33%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 860px) {
+  #timeBar {
+    top: 33%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1280px) {
+  #timeBar {
+    top: 25%;
+    height: 58%;
+  }
 }
 
 #timeBar #progBar {
