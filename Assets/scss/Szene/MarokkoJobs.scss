@@ -37,12 +37,13 @@ html {
         color: white;
         position: fixed;
         font-size: $szeneTextFontSize;
-        top: 9%;
-        width: 37%;
+        top: 11%;
+        width: 47%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
-            top: 8%;
+            top: 9.5%;
+            font-size: $szeneTextFontSize + 0.01;
         }
 }
 
