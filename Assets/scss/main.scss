@@ -12,19 +12,46 @@
   align-items: center;
   justify-content: center;
 
+  min-height: 100vh;
   background-color: black;
 
-  min-width: 100vh;
+ 
   #headLine{
-    font-size: 2vw;
-    font-family: $szeneTextFont;
+    color: white;
+    font-size: 6vw;
+    font-family: $startSeiteFont;
+    margin-bottom: 2%;
   }
 
   #karte {
+    width: 50%;
     
   }
 
   #startBt {
+    margin-top: 2%;
+    font-size: 1.4vw;
+    color: white;
+    font-family: $startSeiteFont;
+    font-weight:700;
+
+    text-decoration: none;
+
+    &:hover {
+      animation: startBtHover 1s ease-in forwards;
+      border-radius: 3px;
+    }
+
+    @keyframes startBtHover {
+       0% {
+         
+       }
+      100% {
+        color: black;
+        background-color: white;
+      }
+    }
+
 
   }
 }

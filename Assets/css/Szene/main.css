@@ -1,19 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-body {
-  max-height: 100%;
-  width: 100%;
-  background-image: url(/Assets/img/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
-  background-position-y: -25px;
-  background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body #enter {
-  position: absolute;
-  top: 60%;
-  left: 45%;
-  font-family: 'Montserrat', sans-serif;
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#main #headLine {
+  color: white;
+  font-size: 6vw;
+  font-family: "Laila", sans-serif;
+  margin-bottom: 2%;
+}
+
+#main #karte {
+  width: 50%;
+}
+
+#main #startBt {
+  margin-top: 2%;
+  font-size: 1.4vw;
+  color: white;
+  font-family: "Laila", sans-serif;
+  font-weight: 700;
   text-decoration: none;
+}
+
+#main #startBt:hover {
+  -webkit-animation: startBtHover 1s ease-in forwards;
+          animation: startBtHover 1s ease-in forwards;
+  border-radius: 3px;
+}
+
+@-webkit-keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
+@keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: black;
+    background-color: white;
+  }
 }
 
 .disable_select {
@@ -21,58 +74,4 @@ body #enter {
      -moz-user-select: none;
           user-select: none;
   -ms-user-select: none;
-}
-
-.headline {
-  position: absolute;
-  top: 40%;
-  padding: 0 21%;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: capitalize;
-  color: #cc5a56;
-  font-size: 7em;
-  font-weight: normal;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-}
-
-footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer nav a:nth-child(2) {
-  margin-top: 17px;
-}
-
-footer nav a:nth-child(1), footer nav a:nth-child(3) {
-  margin-bottom: 9px;
-}
-
-footer nav a:nth-child(3) {
-  margin-top: 1px;
-}
-
-footer img {
-  width: 150px;
-  padding: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
