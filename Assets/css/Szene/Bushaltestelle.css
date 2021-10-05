@@ -23,14 +23,10 @@ html ::-webkit-scrollbar-thumb {
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-#container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -39,97 +35,131 @@ html ::-webkit-scrollbar-thumb {
           align-items: center;
 }
 
-#container #background {
-  top: 30%;
-  left: 25%;
-  width: 50%;
+.container #background {
+  top: 20%;
+  left: 20%;
+  width: 60%;
   position: fixed;
   z-index: 0;
 }
 
 @media (max-width: 1280px) {
-  #container #background {
+  .container #background {
     top: 20%;
   }
 }
 
-#container #rahmen {
-  top: 30%;
-  left: 25%;
-  width: 50.1%;
-  position: fixed;
-  z-index: 3;
-}
-
-@media (max-width: 1280px) {
-  #container #rahmen {
-    top: 20%;
-  }
-}
-
-#container #text {
+.container #text {
   display: none;
   color: white;
   position: fixed;
-  font-size: 1.2vw;
-  width: 42%;
-  top: 22%;
+  font-size: 1.3vw;
+  top: 14%;
   font-family: "Indie Flower", cursive;
+  /* Landscape phones and down */
+  /* Landscape phone to portrait tablet */
 }
 
 @media (max-width: 1280px) {
-  #container #text {
-    top: 11%;
+  .container #text {
+    top: 14%;
+    font-size: 1.3vw;
   }
 }
 
-#timeBar {
+@media (max-width: 480px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container #text {
+    top: 23%;
+  }
+}
+
+@media (max-width: 731px) {
+  .container #text {
+    top: 21%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container #text {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container #text {
+    top: 19%;
+  }
+}
+
+.container #text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container #text a:visited {
+  text-decoration: none;
+  color: inherit;
+  color: burlywood;
+}
+
+.container #text a:hover {
+  color: #d3532c;
+}
+
+.container #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
-  height: 45%;
+  height: 55%;
   position: absolute;
-  left: 17%;
-  top: 34%;
+  left: 15%;
+  top: 24%;
   border-radius: 10px;
   position: fixed;
   overflow: hidden;
 }
 
 @media (max-width: 1441px) {
-  #timeBar {
-    top: 31%;
+  .container #timeBar {
+    top: 35%;
+    height: 380px;
   }
 }
 
 @media (max-width: 1366px) {
-  #timeBar {
-    top: 31%;
-    height: 41%;
+  .container #timeBar {
+    top: 29%;
+    height: 400px;
   }
 }
 
 @media (max-width: 1092px) {
-  #timeBar {
-    top: 31%;
-    height: 33%;
+  .container #timeBar {
+    top: 33%;
+    height: 300px;
   }
 }
 
 @media (max-width: 860px) {
-  #timeBar {
-    top: 31%;
-    height: 25%;
+  .container #timeBar {
+    top: 33%;
+    height: 250px;
   }
 }
 
 @media (max-width: 1280px) {
-  #timeBar {
-    top: 26%;
-    height: 49%;
+  .container #timeBar {
+    top: 24%;
+    height: 60%;
   }
 }
 
-#timeBar #progBar {
+.container #timeBar #progBar {
   width: 100%;
   height: 0%;
   background-color: rgba(114, 114, 114, 0.383);

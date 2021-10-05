@@ -42,14 +42,15 @@ html ::-webkit-scrollbar-thumb {
   color: white;
   position: fixed;
   font-size: 1.2vw;
-  top: 9%;
-  width: 37%;
+  top: 11%;
+  width: 47%;
   font-family: "Indie Flower", cursive;
 }
 
 @media (max-width: 1280px) {
   #main #text {
-    top: 8%;
+    top: 9.5%;
+    font-size: 1.21vw;
   }
 }
 

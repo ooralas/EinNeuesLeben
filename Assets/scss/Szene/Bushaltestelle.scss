@@ -48,14 +48,14 @@ html {
         display:none;
         color: white;
         position: fixed;
-        font-size: $szeneTextFontSize;
-        top: 7%;
-        width: 56%;
+        font-size: $szeneTextFontSize + 0.1;
+        top: 14%;
+        // width: 56%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
-            top: 7%;
-            
+            top: 14%;
+            font-size: $szeneTextFontSize + 0.1;
         }
 
         /* Landscape phones and down */
