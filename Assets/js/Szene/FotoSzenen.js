@@ -35,6 +35,7 @@ window.addEventListener('scroll',function(){
     if(value > 200){
         $("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
+
     }
     
     console.log(value)
