@@ -15,7 +15,8 @@
   box-sizing: border-box;
 }
 html {
-  @include scrollBarStyleLetzteSeite;
+  @include hideScrollBar;
+  scroll-behavior: smooth;
 }
 
 
@@ -23,14 +24,16 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   // background-color: red;
+
+  border-bottom: black solid 2px;
  
   #headLine{
     color: rgb(0, 0, 0);
     font-size: 5.3vw;
     font-family: $startSeiteFont;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 40%;
     text-align: center;
   }
@@ -69,7 +72,7 @@ html {
     width: 40%;
 
     p {
-        margin-top: -8%;
+        margin-top: 4%;
         height: 100%;
         width: 60%;
         font-family: $startSeiteFont;
@@ -86,7 +89,7 @@ html {
   }
 
   #storyMap {
-      
+      border: 2px solid black;
   }
 }
 

@@ -7,17 +7,22 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html ::-webkit-scrollbar {
-  width: 10px;
+  width: 1px;
 }
 
 html ::-webkit-scrollbar-track {
-  background: #ffffff;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 html ::-webkit-scrollbar-thumb {
-  background: #6d6c6c;
-  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 #main {
@@ -31,14 +36,15 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  border-bottom: black solid 2px;
 }
 
 #main #headLine {
   color: black;
   font-size: 5.3vw;
   font-family: "Laila", sans-serif;
-  margin-top: 5%;
+  margin-top: 2%;
   width: 40%;
   text-align: center;
 }
@@ -90,7 +96,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 #main #unterstuetztVon p {
-  margin-top: -8%;
+  margin-top: 4%;
   height: 100%;
   width: 60%;
   font-family: "Laila", sans-serif;
@@ -101,6 +107,10 @@ html ::-webkit-scrollbar-thumb {
 #main #unterstuetztVon .logo {
   width: 100%;
   padding: 0px;
+}
+
+#main #storyMap {
+  border: 2px solid black;
 }
 
 .disable_select {
