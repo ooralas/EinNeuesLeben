@@ -39,10 +39,32 @@ html {
   }
 
   #ueberProjekt {
+
     font-family: $startSeiteFont;
     font-size: 1vw;
     width: 70%;
     text-align: center;
+
+    #linkToStoryMap {
+    text-decoration: none;
+    font-weight: bolder;
+    
+    &:hover {
+      animation: startBtHover 1s ease-in forwards;
+      border-radius: 10px;
+    }
+
+    @keyframes startBtHover {
+       0% {
+         
+       }
+      100% {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        width: 7%;
+      }
+    }
+    }
   }
 
   #teilnehmer {
@@ -63,13 +85,17 @@ html {
   }
 
   #unterstuetztVon {
-    margin-top: 17%;
+    margin-top: 13%;
 
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
     width: 40%;
+
+    @media ( max-width: 1280px ) {
+      margin-top: 12%;
+  }
 
     p {
         margin-top: 4%;
@@ -86,10 +112,6 @@ html {
         padding: 0px;
         
     }
-  }
-
-  #storyMap {
-      border: 2px solid black;
   }
 }
 

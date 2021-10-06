@@ -56,6 +56,37 @@ html ::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+#main #ueberProjekt #linkToStoryMap {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#main #ueberProjekt #linkToStoryMap:hover {
+  -webkit-animation: startBtHover 1s ease-in forwards;
+          animation: startBtHover 1s ease-in forwards;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: white;
+    background-color: black;
+    width: 7%;
+  }
+}
+
+@keyframes startBtHover {
+  0% {
+  }
+  100% {
+    color: white;
+    background-color: black;
+    width: 7%;
+  }
+}
+
 #main #teilnehmer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +109,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 #main #unterstuetztVon {
-  margin-top: 17%;
+  margin-top: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +126,12 @@ html ::-webkit-scrollbar-thumb {
   width: 40%;
 }
 
+@media (max-width: 1280px) {
+  #main #unterstuetztVon {
+    margin-top: 12%;
+  }
+}
+
 #main #unterstuetztVon p {
   margin-top: 4%;
   height: 100%;
@@ -107,10 +144,6 @@ html ::-webkit-scrollbar-thumb {
 #main #unterstuetztVon .logo {
   width: 100%;
   padding: 0px;
-}
-
-#main #storyMap {
-  border: 2px solid black;
 }
 
 .disable_select {
