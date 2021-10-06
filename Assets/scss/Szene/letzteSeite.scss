@@ -1,55 +1,67 @@
 @import "../_font.scss";
+@import "../scrollbar";
+
+@mixin mainBackground {
+  background-color: #ffffff;
+  opacity: 0.2;
+  background-image:  repeating-linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%, #000000), repeating-linear-gradient(45deg, #000000 25%, #ffffff 25%, #ffffff 75%, #000000 75%, #000000);
+  background-position: 0 0, 6px 6px;
+  background-size: 12px 12px;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  @include scrollBarStyleLetzteSeite;
+}
+
 
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
   min-height: 100vh;
-  background-color: rgb(255, 255, 255);
-
+  // background-color: red;
  
   #headLine{
     color: rgb(0, 0, 0);
-    font-size: 6vw;
+    font-size: 5.3vw;
     font-family: $startSeiteFont;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    width: 40%;
+    text-align: center;
   }
 
   #ueberProjekt {
     font-family: $startSeiteFont;
     font-size: 1vw;
+    width: 70%;
+    text-align: center;
   }
 
   #teilnehmer {
       display: flex;
       justify-content: space-between;
-      align-items: center ;
+      align-items: flex-start ;
       
-      width: 20%;
+      width: 40%;
       margin-top: 6%;
     
       font-family: $startSeiteFont;
-      font-size: 1vw;
+      font-size: 0.7vw;
 
-      #zeichnen {
-          margin-top: -7%;
+      .listStyleNone {
         list-style: none;
-      }
-
-      #entwicklung{
-        list-style: none;
+        font-size: 1vw;
       }
   }
 
   #unterstuetztVon {
+    margin-top: 17%;
+
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -58,7 +70,6 @@
 
     p {
         margin-top: -8%;
-        // background-color: red;
         height: 100%;
         width: 60%;
         font-family: $startSeiteFont;

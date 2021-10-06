@@ -10,3 +10,16 @@
         border-radius: 10px;
     }
 }
+
+@mixin scrollBarStyleLetzteSeite {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {        
+        background:#ffffff ;   
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #6d6c6c;
+        border-radius: 10px;
+    }
+}

@@ -7,6 +7,19 @@
           box-sizing: border-box;
 }
 
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #6d6c6c;
+  border-radius: 10px;
+}
+
 #main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,23 +31,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-height: 100vh;
-  background-color: white;
 }
 
 #main #headLine {
   color: black;
-  font-size: 6vw;
+  font-size: 5.3vw;
   font-family: "Laila", sans-serif;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  width: 40%;
+  text-align: center;
 }
 
 #main #ueberProjekt {
   font-family: "Laila", sans-serif;
   font-size: 1vw;
+  width: 70%;
+  text-align: center;
 }
 
 #main #teilnehmer {
@@ -44,25 +57,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 20%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40%;
   margin-top: 6%;
   font-family: "Laila", sans-serif;
+  font-size: 0.7vw;
+}
+
+#main #teilnehmer .listStyleNone {
+  list-style: none;
   font-size: 1vw;
 }
 
-#main #teilnehmer #zeichnen {
-  margin-top: -7%;
-  list-style: none;
-}
-
-#main #teilnehmer #entwicklung {
-  list-style: none;
-}
-
 #main #unterstuetztVon {
+  margin-top: 17%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
