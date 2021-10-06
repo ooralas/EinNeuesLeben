@@ -49,6 +49,19 @@ html ::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+#main .normalLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main .normalLink:visited {
+  color: black;
+}
+
+#main .normalLink:hover {
+  color: #c24444;
+}
+
 #main #ueberProjekt {
   font-family: "Laila", sans-serif;
   font-size: 1vw;
@@ -132,7 +145,7 @@ html ::-webkit-scrollbar-thumb {
 
 @media (max-width: 1280px) {
   #main #unterstuetztVon {
-    margin-top: 12%;
+    margin-top: 10%;
   }
 }
 

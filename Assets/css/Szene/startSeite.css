@@ -69,6 +69,15 @@
   }
 }
 
+#main #text {
+  color: white;
+  font-family: "Laila", sans-serif;
+  font-size: 0.9vw;
+  width: 45%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;

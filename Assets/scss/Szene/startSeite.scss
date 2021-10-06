@@ -52,6 +52,15 @@
 
 
   }
+
+  #text {
+    color: white;
+    font-family:  $startSeiteFont;
+    font-size: 0.9vw;
+    width: 45%;
+    margin-bottom: 1%;
+    text-align: center;
+  }
 }
 
 //hindert den User Text zu selectieren
