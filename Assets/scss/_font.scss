@@ -8,3 +8,8 @@ $szeneTextFontSize : 1.2vw;
 //Font für den Text in der Startseite
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap');
 $startSeiteFont: 'Laila', sans-serif;
+
+.disable_select {
+    user-select: none;
+    -ms-user-select:none;
+  }
