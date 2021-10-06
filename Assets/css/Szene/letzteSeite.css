@@ -67,6 +67,10 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+#main #ueberProjekt #linkToStoryMap:visited {
+  color: black;
+}
+
 @-webkit-keyframes startBtHover {
   0% {
   }

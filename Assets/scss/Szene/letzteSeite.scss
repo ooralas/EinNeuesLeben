@@ -54,6 +54,10 @@ html {
       border-radius: 10px;
     }
 
+    &:visited {
+      color: black;
+    }
+
     @keyframes startBtHover {
        0% {
          
