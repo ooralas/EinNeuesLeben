@@ -40,7 +40,7 @@
   height: auto;
   z-index: 1;
   margin-top: -45%;
-  margin-left: 72%;
+  margin-left: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,11 +49,16 @@
           justify-content: space-evenly;
 }
 
+@media (max-width: 1280px) {
+  #main #navigation {
+    width: 25%;
+    margin-left: 65%;
+  }
+}
+
 #main #navigation #linkToFirstPage {
-  font-size: 1.25em;
-  line-height: 1.5;
+  font-size: 1.2em;
   width: auto;
-  display: inline-block;
   text-decoration: none;
   color: inherit;
   font-family: "Old Standard TT", serif;
@@ -63,8 +68,20 @@
   color: inherit;
 }
 
+@media (max-width: 1280px) {
+  #main #navigation #linkToFirstPage {
+    font-size: 1em;
+  }
+}
+
 #main #navigation img {
   width: 100%;
+}
+
+@media (max-width: 1280px) {
+  #main #navigation img {
+    width: 70%;
+  }
 }
 
 #main #storyMap {

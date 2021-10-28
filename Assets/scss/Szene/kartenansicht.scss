@@ -23,16 +23,20 @@
     height: auto;
     z-index: 1;
     margin-top: -45%;
-    margin-left: 72%;
+    margin-left: 60%;
 
     display: flex;
     justify-content:space-evenly;
+
+    @media ( max-width: 1280px ) {
+      width: 25%;
+      margin-left: 65%;
+    }
     
     #linkToFirstPage {
-      font-size: 1.25em;
-      line-height: 1.5;
+      font-size: 1.2em;
+      // line-height: 1.5;
       width: auto;
-      display: inline-block;
 
       text-decoration: none;
       color: inherit;
@@ -41,10 +45,19 @@
       &:active {
         color: inherit;
       }
+
+      
+      @media ( max-width: 1280px ) {
+        font-size: 1em;
+      }
     }
     
     img {
       width: 100%;
+
+      @media ( max-width: 1280px ) {
+        width: 70%;
+      }
     }
   }
 
