@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+.disable_select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -ms-user-select: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,11 +34,37 @@
   background-color: #fae6c0;
 }
 
-#main #text {
+#main #navigation {
   position: absolute;
-  font-size: 3em;
+  width: 22%;
+  height: auto;
   z-index: 1;
-  margin-top: -30%;
+  margin-top: -45%;
+  margin-left: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main #navigation #linkToFirstPage {
+  font-size: 1.25em;
+  line-height: 1.5;
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Old Standard TT", serif;
+}
+
+#main #navigation #linkToFirstPage:active {
+  color: inherit;
+}
+
+#main #navigation img {
+  width: 100%;
 }
 
 #main #storyMap {

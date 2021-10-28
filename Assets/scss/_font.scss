@@ -9,6 +9,9 @@ $szeneTextFontSize : 1.2vw;
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap');
 $startSeiteFont: 'Laila', sans-serif;
 
+//Text für Kartenansicht-Seite
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+$kartenAnsichtFont: 'Old Standard TT', serif;
 .disable_select {
     user-select: none;
     -ms-user-select:none;
