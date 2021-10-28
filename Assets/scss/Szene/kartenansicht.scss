@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #fae6c0;
+
+  #text {
+    position: absolute;
+    font-size: 3em;
+    z-index: 1;
+
+    margin-top: -30%;
+  }
+
+  #storyMap {
+    position: relative;
+    z-index: 0;
+  }
+}
