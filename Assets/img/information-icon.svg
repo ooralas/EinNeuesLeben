@@ -1,0 +1,10 @@
+<svg id="Komponente_2" data-name="Komponente 2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Rechteck_230" data-name="Rechteck 230" fill="none" stroke="black" stroke-width="1" opacity="0.997">
+    <rect width="30" height="30" rx="15" stroke="none"/>
+    <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="none"/>
+  </g>
+  <g id="Gruppe_135" data-name="Gruppe 135" transform="translate(-1207.5 -63)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="1" cy="1" r="1" transform="translate(1221.5 71)" fill="black" stroke="black" stroke-width="1"/>
+    <rect id="Rechteck_232" data-name="Rechteck 232" width="2" height="10" transform="translate(1221.5 76)" fill="black" stroke="black" stroke-linejoin="round" stroke-width="0.5"/>
+  </g>
+</svg>
