@@ -23,67 +23,71 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background-color: black;
 }
 
 #main #headLine {
   color: white;
-  font-size: 6vw;
+  font-size: 3.5vw;
   font-family: "Laila", sans-serif;
-  margin-bottom: 2%;
-}
-
-#main #karte {
-  width: 50%;
-}
-
-#main #startBt {
-  margin-top: 2%;
-  font-size: 1.7vw;
-  color: white;
-  font-family: "Laila", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-#main #startBt:hover {
-  -webkit-animation: startBtHover 1s ease-in forwards;
-          animation: startBtHover 1s ease-in forwards;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes startBtHover {
-  0% {
-  }
-  100% {
-    color: black;
-    background-color: white;
-  }
-}
-
-@keyframes startBtHover {
-  0% {
-  }
-  100% {
-    color: black;
-    background-color: white;
-  }
 }
 
 #main #text {
   color: white;
   font-family: "Laila", sans-serif;
   font-size: 0.9vw;
-  width: 45%;
-  margin-bottom: 1%;
+  width: 27%;
   text-align: center;
+}
+
+#main #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1% 0;
+  width: 25%;
+}
+
+#main #navigation a {
+  font-family: "Laila", sans-serif;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 27px;
+}
+
+#main #navigation a:active {
+  color: inherit;
+}
+
+#main #navigation a span {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+}
+
+#main #navigation a span:hover {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background-color: white;
+  color: black;
+}
+
+#main #karte {
+  width: 50%;
 }
 
 .disable_select {
