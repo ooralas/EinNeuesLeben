@@ -44,72 +44,65 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 100vh;
-  border-bottom: black solid 2px;
 }
 
 #main #headLine {
   color: black;
-  font-size: 5.3vw;
+  font-size: 4vw;
   font-family: "Laila", sans-serif;
-  margin-top: 2%;
   width: 40%;
   text-align: center;
-}
-
-#main .normalLink {
-  text-decoration: none;
-  color: inherit;
-}
-
-#main .normalLink:visited {
-  color: black;
-}
-
-#main .normalLink:hover {
-  color: #c24444;
 }
 
 #main #ueberProjekt {
   font-family: "Laila", sans-serif;
   font-size: 1vw;
-  width: 70%;
+  width: 35%;
   text-align: center;
 }
 
-#main #ueberProjekt #linkToStoryMap {
-  text-decoration: none;
-  font-weight: bolder;
+#main #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -1.5%;
+  margin-bottom: 11%;
+  width: 25%;
 }
 
-#main #ueberProjekt #linkToStoryMap:hover {
-  -webkit-animation: startBtHover 1s ease-in forwards;
-          animation: startBtHover 1s ease-in forwards;
-  border-radius: 10px;
-}
-
-#main #ueberProjekt #linkToStoryMap:visited {
+#main #navigation a {
+  font-family: "Laila", sans-serif;
   color: black;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 27px;
 }
 
-@-webkit-keyframes startBtHover {
-  0% {
-  }
-  100% {
-    color: white;
-    background-color: black;
-    width: 7%;
-  }
+#main #navigation a:active {
+  color: inherit;
 }
 
-@keyframes startBtHover {
-  0% {
-  }
-  100% {
-    color: white;
-    background-color: black;
-    width: 7%;
-  }
+#main #navigation a span {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+}
+
+#main #navigation a span:hover {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  background-color: white;
+  color: black;
 }
 
 #main #teilnehmer {
@@ -119,11 +112,7 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   width: 40%;
-  margin-top: 6%;
   font-family: "Laila", sans-serif;
   font-size: 0.7vw;
 }
@@ -133,8 +122,14 @@ html ::-webkit-scrollbar-thumb {
   font-size: 1vw;
 }
 
+#main #linie {
+  background-color: black;
+  height: 1px;
+  width: 60%;
+  display: block;
+}
+
 #main #unterstuetztVon {
-  margin-top: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,9 +166,41 @@ html ::-webkit-scrollbar-thumb {
   padding: 0px;
 }
 
+#impressum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#impressum p {
+  text-align: center;
+  font-family: "Laila", sans-serif;
+  font-size: 1.5em;
+  width: 70%;
+}
+
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   -ms-user-select: none;
+}
+
+.normalLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.normalLink:visited {
+  color: black;
+}
+
+.normalLink:hover {
+  color: #c24444;
 }

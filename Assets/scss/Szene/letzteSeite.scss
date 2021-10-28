@@ -17,74 +17,68 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:space-evenly;
   height: 100vh;
-  // background-color: red;
-
-  border-bottom: black solid 2px;
  
   #headLine{
     color: rgb(0, 0, 0);
-    font-size: 5.3vw;
+    font-size: 4vw;
     font-family: $startSeiteFont;
-    margin-top: 2%;
     width: 40%;
     text-align: center;
   }
 
-  .normalLink {
-    text-decoration: none;
-    color: inherit;
-    &:visited {
-      color: black;
-    }
-
-    &:hover {
-      color: rgb(194, 68, 68);
-    }
-  }
 
   #ueberProjekt {
     font-family: $startSeiteFont;
     font-size: 1vw;
-    width: 70%;
+    width: 35%;
     text-align: center;
+  }
 
-    #linkToStoryMap {
-    text-decoration: none;
-    font-weight: bolder;
-    
-    &:hover {
-      animation: startBtHover 1s ease-in forwards;
-      border-radius: 10px;
-    }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.5%;
+    margin-bottom: 11% ;
+    width: 25%;
 
-    &:visited {
-      color: black;
-    }
+    a {
+      font-family: $startSeiteFont;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      text-align: center;
+      width: 40%;
 
-    @keyframes startBtHover {
-       0% {
-         
-       }
-      100% {
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        width: 7%;
+      overflow: hidden;
+      
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 27px;
+      &:active {
+        color: inherit;
       }
-    }
+      
+      span {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        &:hover {
+          transition: 0.5s ease-in;
+          background-color: white;
+          color: black;
+        }
+      }
     }
   }
 
   #teilnehmer {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start ;
-      
       width: 40%;
-      margin-top: 6%;
     
       font-family: $startSeiteFont;
       font-size: 0.7vw;
+    
 
       .listStyleNone {
         list-style: none;
@@ -92,9 +86,16 @@ html {
       }
   }
 
-  #unterstuetztVon {
-    margin-top: 13%;
+  #linie {
+    background-color: black;
+    height: 1px;
+    width: 60%;
+    display: block;
 
+  }
+
+  #unterstuetztVon {
+    // margin-top: 13%;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -103,7 +104,7 @@ html {
 
     @media ( max-width: 1280px ) {
       margin-top: 10%;
-  }
+    }
 
     p {
         margin-top: 4%;
@@ -121,6 +122,20 @@ html {
         
     }
   }
+
+}
+
+#impressum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    font-family: $startSeiteFont;
+    font-size: 1.5em;
+    width: 70%;
+  }
 }
 
 //hindert den User Text zu selectieren
@@ -129,3 +144,14 @@ html {
   -ms-user-select:none;
 }
 
+.normalLink {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: rgb(194, 68, 68);
+  }
+}
