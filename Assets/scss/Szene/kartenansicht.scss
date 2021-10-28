@@ -1,3 +1,5 @@
+@import "../_font.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,12 +16,36 @@
 
   background-color: #fae6c0;
 
-  #text {
+  #navigation {
     position: absolute;
-    font-size: 3em;
+    // background-color: rgb(255, 255, 255);
+    width: 22%;
+    height: auto;
     z-index: 1;
+    margin-top: -45%;
+    margin-left: 72%;
 
-    margin-top: -30%;
+    display: flex;
+    justify-content:space-evenly;
+    
+    #linkToFirstPage {
+      font-size: 1.25em;
+      line-height: 1.5;
+      width: auto;
+      display: inline-block;
+
+      text-decoration: none;
+      color: inherit;
+      font-family: $kartenAnsichtFont;
+
+      &:active {
+        color: inherit;
+      }
+    }
+    
+    img {
+      width: 100%;
+    }
   }
 
   #storyMap {
