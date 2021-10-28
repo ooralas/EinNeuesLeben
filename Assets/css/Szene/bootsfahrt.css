@@ -54,6 +54,59 @@ html body #main {
           align-items: center;
 }
 
+html body #main #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 21%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+@media (max-width: 1280px) {
+  html body #main #navigation {
+    width: 26%;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+}
+
+html body #main #navigation #linkToFirstPage {
+  font-size: 1.2em;
+  width: auto;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Old Standard TT", serif;
+}
+
+html body #main #navigation #linkToFirstPage:active {
+  color: inherit;
+}
+
+@media (max-width: 1280px) {
+  html body #main #navigation #linkToFirstPage {
+    font-size: 1em;
+  }
+}
+
+html body #main #navigation img {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  html body #main #navigation img {
+    width: 70%;
+  }
+}
+
 html body #main #zeichnungenContainer #backgroundIMG {
   left: 10%;
   top: 30%;

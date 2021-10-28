@@ -31,6 +31,52 @@ html {
             justify-content: center;
             align-items: center;
 
+            #navigation {
+                display: flex;
+                justify-content:space-between;
+                position: fixed;
+        
+                // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
+                background-color: white;
+        
+                width: 21%;
+                height: auto;
+                align-self: flex-end;
+                margin-right: 10%;
+                margin-top: 5%;
+        
+                @media ( max-width: 1280px ) {
+                    width: 26%;
+                    margin-right: 3%;
+                    margin-top: 3%;
+                }
+                
+                #linkToFirstPage {
+                    font-size: 1.2em;
+                    width: auto;
+        
+                    text-decoration: none;
+                    color: inherit;
+                    font-family: $kartenAnsichtFont;
+        
+                    &:active {
+                        color: inherit;
+                    }
+        
+                    @media ( max-width: 1280px ) {
+                        font-size: 1em;
+                    }
+                }
+                
+                img {
+                    width: 100%;
+        
+                @media ( max-width: 1280px ) {
+                    width: 70%;
+                    }
+                }
+            }
+
             #zeichnungenContainer {
                 #backgroundIMG {
                     left: 10%;
