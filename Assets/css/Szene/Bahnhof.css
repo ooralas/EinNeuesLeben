@@ -58,8 +58,8 @@ html ::-webkit-scrollbar-thumb {
   height: auto;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-right: 10%;
-  margin-top: 5%;
+  margin-right: 4%;
+  margin-top: 4%;
 }
 
 @media (max-width: 1280px) {

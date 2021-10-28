@@ -1,4 +1,5 @@
 @import "../_font.scss";
+@import "../navigationStyle";
 
 html {
     background-color: black;
@@ -33,11 +34,11 @@ html {
         // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
         background-color: white;
 
-        width: 21%;
+        width: $width;
         height: auto;
         align-self: flex-end;
-        margin-right: 10%;
-        margin-top: 5%;
+        margin-right: $marginTop;
+        margin-top: $marginTop;
 
         @media ( max-width: 1280px ) {
             width: 26%;
