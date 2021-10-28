@@ -45,6 +45,59 @@ html ::-webkit-scrollbar-thumb {
           align-items: center;
 }
 
+#main #navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 21%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+@media (max-width: 1280px) {
+  #main #navigation {
+    width: 26%;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+}
+
+#main #navigation #linkToFirstPage {
+  font-size: 1.2em;
+  width: auto;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Old Standard TT", serif;
+}
+
+#main #navigation #linkToFirstPage:active {
+  color: inherit;
+}
+
+@media (max-width: 1280px) {
+  #main #navigation #linkToFirstPage {
+    font-size: 1em;
+  }
+}
+
+#main #navigation img {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  #main #navigation img {
+    width: 70%;
+  }
+}
+
 #main #text {
   display: none;
   color: white;
