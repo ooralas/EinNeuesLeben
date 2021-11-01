@@ -19,13 +19,16 @@ $(document).ready(function(){
     });
     $("#backBt").fadeIn(3000);
 });
-
-
-
+console.log("Soundcontex -> " + Howler.ctx.state)
 
 
 window.addEventListener('scroll',function(){
     
+    if (Howler.ctx.state === 'suspended') {
+        Howler.ctx.resume().then( function() {
+            console.log(Howler.ctx.state)
+        });
+    }
     let value = window.scrollY;
     let value2 = this.window.screenY;
    
@@ -77,10 +80,10 @@ window.addEventListener('scroll',function(){
         
     }
     
-    console.log(value);
+    // console.log(value);
     startSound();
     startTimeBar(sound.duration());
-    console.log("soundDur",sound.duration())
+    // console.log("soundDur",sound.duration())
     
 
 
@@ -91,7 +94,7 @@ window.addEventListener('scroll',function(){
 
     if(value > 900){
         $("#nextBtTrigger").trigger("click");
-        console.log("Hier wird gefeuert");
+        // console.log("Hier wird gefeuert");
     }
 });
 
@@ -100,7 +103,7 @@ let startSound = () => {
         sound.fade(0, 0.4, 5000);
         sound.play();
     }else{
-        console.log("Sound is: ", sound.playing());
+        // console.log("Sound is: ", sound.playing());
     }
 }
 
