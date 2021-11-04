@@ -30,17 +30,17 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-color: black;
+  background-color: #fae6c0;
 }
 
 #main #headLine {
-  color: white;
+  color: black;
   font-size: 3.5vw;
   font-family: "Laila", sans-serif;
 }
 
 #main #text {
-  color: white;
+  color: black;
   font-family: "Laila", sans-serif;
   font-size: 0.9vw;
   width: 27%;
@@ -60,12 +60,12 @@
 
 #main #navigation a {
   font-family: "Laila", sans-serif;
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   width: 40%;
   overflow: hidden;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 7px;
 }
 
@@ -88,6 +88,71 @@
 
 #main #karte {
   width: 50%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #999999;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.modal #modal__text {
+  padding: 10px 10px;
+  font-family: "Laila", sans-serif;
+  color: white;
+  font-size: 1.2em;
+}
+
+.modal #modal__btn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+  padding-bottom: 1%;
+}
+
+.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .disable_select {

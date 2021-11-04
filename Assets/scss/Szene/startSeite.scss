@@ -15,17 +15,17 @@
   align-items: center;
 
   min-height: 100vh;
-  background-color: black;
+  background-color: #fae6c0;
 
  
   #headLine{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3.5vw;
     font-family: $startSeiteFont;
   }
 
   #text {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family:  $startSeiteFont;
     font-size: 0.9vw;
     width: 27%;
@@ -41,14 +41,14 @@
 
     a {
       font-family: $startSeiteFont;
-      color: white;
+      color: black;
       text-decoration: none;
       text-align: center;
       width: 40%;
 
       overflow: hidden;
       
-      border: 2px solid white;
+      border: 2px solid rgb(0, 0, 0);
       border-radius: 7px;
       &:active {
         color: inherit;
@@ -74,6 +74,66 @@
   
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(153, 153, 153);
+
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+
+  #modal__text {
+    padding: 10px 10px;
+    font-family: $startSeiteFont;
+    color: white;
+    
+    font-size: 1.2em;
+  }
+
+  #modal__btn {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+
+    font-weight: bolder;
+    font-size: 1em;
+    padding-bottom: 1%;
+  }
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, .8);
+  pointer-events: none;
+
+  transition: 200ms ease-in-out;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+}
 //hindert den User Text zu selectieren
 .disable_select {
   user-select: none;
