@@ -88,7 +88,7 @@ html {
 
     #text {
         display:none;
-        color: szeneTextFontColor;
+        color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize;
         top: 11%;

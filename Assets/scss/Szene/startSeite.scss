@@ -19,13 +19,13 @@
 
  
   #headLine{
-    color: white;
+    color: $szeneTextFontColor;
     font-size: 3.5vw;
     font-family: $startSeiteFont;
   }
 
   #text {
-    color: white;
+    color: $szeneTextFontColor;
     font-family:  $startSeiteFont;
     font-size: 0.9vw;
     width: 27%;
@@ -41,14 +41,14 @@
 
     a {
       font-family: $startSeiteFont;
-      color: white;
+      color: $szeneTextFontColor;
       text-decoration: none;
       text-align: center;
       width: 40%;
 
       overflow: hidden;
       
-      border: 2px solid white;
+      border: 2px solid $szeneTextFontColor;
       border-radius: 7px;
       &:active {
         color: inherit;
@@ -61,7 +61,7 @@
         &:hover {
           transition: 0.5s ease-in;
           background-color: white;
-          color: black;
+          color: $szeneTextFontColor;
         }
       }
     }
