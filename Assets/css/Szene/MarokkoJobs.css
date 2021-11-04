@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: #fae6c0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 300vh;
@@ -100,7 +100,7 @@ html ::-webkit-scrollbar-thumb {
 
 #main #text {
   display: none;
-  color: white;
+  color: szeneTextFontColor;
   position: fixed;
   font-size: 1.2vw;
   top: 11%;

@@ -32,7 +32,7 @@ html {
         position: fixed;
 
         // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
-        background-color: white;
+        background-color: #fae6c0;
 
         width: $width;
         height: auto;
@@ -74,7 +74,7 @@ html {
 
     #text {
         display:none;
-        color: white;
+        color: szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
         top: 20%;

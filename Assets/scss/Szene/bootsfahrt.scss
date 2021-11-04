@@ -25,7 +25,7 @@ html {
     @include scrollBarStyle;
 
     body {
-        background-color: black;
+        background-color: #fae6c0;
         #main{
             display: flex;
             flex-direction: column;
@@ -140,7 +140,7 @@ html {
 
         #text {
             display:none;
-            color: white;
+            color: szeneTextFontColor;
             position: fixed;
             font-size: $szeneTextFontSize + 0.1;
             top: 17%;

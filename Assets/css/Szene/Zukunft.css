@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: #fae6c0;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -116,7 +116,7 @@ html ::-webkit-scrollbar-thumb {
 
 .container #text {
   display: none;
-  color: white;
+  color: szeneTextFontColor;
   position: fixed;
   font-size: 1.2vw;
   top: 11%;
@@ -251,7 +251,7 @@ html ::-webkit-scrollbar-thumb {
 
 .container #endBt {
   font-size: 1.7vw;
-  color: white;
+  color: black;
   font-family: "Laila", sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -271,7 +271,6 @@ html ::-webkit-scrollbar-thumb {
   }
   100% {
     color: black;
-    background-color: white;
   }
 }
 
@@ -280,7 +279,6 @@ html ::-webkit-scrollbar-thumb {
   }
   100% {
     color: black;
-    background-color: white;
   }
 }
 

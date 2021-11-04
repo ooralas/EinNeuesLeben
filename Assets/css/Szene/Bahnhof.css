@@ -53,7 +53,7 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  background-color: white;
+  background-color: #fae6c0;
   width: 21%;
   height: auto;
   -ms-flex-item-align: end;
@@ -100,7 +100,7 @@ html ::-webkit-scrollbar-thumb {
 
 #main #text {
   display: none;
-  color: white;
+  color: szeneTextFontColor;
   position: fixed;
   font-size: 1.3vw;
   top: 20%;

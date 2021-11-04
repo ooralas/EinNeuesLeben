@@ -10,7 +10,7 @@
 } 
 
 html {
-    background-color: black;
+    background-color: #fae6c0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -94,7 +94,7 @@ html {
     
     #text {
         display:none;
-        color: white;
+        color: szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
         top: 19%;
