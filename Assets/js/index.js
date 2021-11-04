@@ -15,12 +15,14 @@ let isPageReloaded = () => {
 
 
 if(!isPageReloaded()) {
-    window.onload = () => {
-        // if(history.length < 2) {
-            modal.classList.add("active")
-            overlay.classList.add("active")
-        // }
-    }
+    setTimeout(() => {
+        // window.onload = () => {
+            // if(history.length < 2) {
+                modal.classList.add("active")
+                overlay.classList.add("active")
+            // }
+        // } 
+    }, 1500);
     
     button.onclick = () => {
         modal.classList.remove("active")
