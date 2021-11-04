@@ -25,7 +25,7 @@ html {
     @include scrollBarStyle;
 
     body {
-        background-color: #fae6c0;
+        background-color: $szeneBackgroundColor;
         #main{
             display: flex;
             flex-direction: column;
@@ -38,7 +38,7 @@ html {
                 position: fixed;
         
                 // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
-                background-color: white;
+                background-color: $szeneBackgroundColor;
         
                 width: $width ;
                 height: auto;

@@ -62,7 +62,7 @@ html body #main #navigation {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  background-color: white;
+  background-color: #fae6c0;
   width: 21%;
   height: auto;
   -ms-flex-item-align: end;

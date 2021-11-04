@@ -2,7 +2,7 @@
 @import "../navigationStyle";
 
 html {
-    background-color: black;
+    background-color: $szeneBackgroundColor;
     
     
     box-sizing: border-box;
@@ -32,7 +32,7 @@ html {
         position: fixed;
 
         // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
-        background-color: #fae6c0;
+        background-color: $szeneBackgroundColor;
 
         width: $width;
         height: auto;

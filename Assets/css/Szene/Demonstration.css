@@ -54,7 +54,7 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  background-color: white;
+  background-color: szeneBackgroundColor;
   width: 21%;
   height: auto;
   -ms-flex-item-align: end;
