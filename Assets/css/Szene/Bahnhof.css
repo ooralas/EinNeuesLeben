@@ -100,7 +100,7 @@ html ::-webkit-scrollbar-thumb {
 
 #main #text {
   display: none;
-  color: szeneTextFontColor;
+  color: black;
   position: fixed;
   font-size: 1.3vw;
   top: 20%;
@@ -285,8 +285,10 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   width: 4%;
   top: 50%;
+  right: 20px;
   z-index: 4;
-  opacity: 0;
+  display: none;
+  opacity: 0.9;
 }
 
 #backBt {
@@ -296,7 +298,7 @@ html ::-webkit-scrollbar-thumb {
   top: 50%;
   z-index: 4;
   display: none;
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 .hide {

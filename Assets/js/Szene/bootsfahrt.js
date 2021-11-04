@@ -12,15 +12,12 @@ var sound = new Howl({
    
 
   $(document).ready(function(){
-    $("#nextBtTrigger").click(function(){
-        $("#nextBt").animate({
-            right: 20 + "px",
-            opacity: 0.3,
-            
-        },900);
-    });
+
+    $("#nextBt").fadeIn(3000);
+    $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
 });
+
 
 window.addEventListener('scroll',function(){
     
@@ -33,11 +30,11 @@ window.addEventListener('scroll',function(){
     console.log(value)
 
     if(value > 300){
-        $("#text").fadeIn(1000);
+        //$("#text").fadeIn(1000);
     }
 
     if(value > 2000){
-        $("#nextBtTrigger").trigger("click");
+        //$("#nextBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
     }
 });

@@ -89,7 +89,7 @@ html {
 
     #text {
         display:none;
-        color: szeneTextFontColor;
+        color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
         top: 14%;
@@ -195,12 +195,14 @@ html {
 }
 
 #nextBt{
-        position: fixed; 
-        width: 4%;
-        top:50%;
-        z-index: 4;
-        opacity: 0;
-    }
+    position: fixed; 
+    width: 4%;
+    top:50%;
+    right: 20px;
+    z-index: 4;
+    display: none;
+    opacity: 0.9;
+}
 
 #backBt{
     position: fixed; 
@@ -209,7 +211,7 @@ html {
         top:50%;
         z-index: 4;
         display: none;
-        opacity: 0.3;
+        opacity: 0.9;
         
 }
 

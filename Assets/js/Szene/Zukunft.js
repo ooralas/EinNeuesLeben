@@ -39,12 +39,9 @@ var sound = new Howl({
   });
 
   $(document).ready(function(){
-    $("#endBtTrigger").click(function(){
-        $("#endBt").animate({
-            opacity: 1
-            
-        },2000);
-    });
+
+    $("#nextBt").fadeIn(3000);
+    $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
 });
 
@@ -60,11 +57,11 @@ window.addEventListener('scroll',function(){
     console.log(value)
 
     if(value > 50){
-        $("#text").fadeIn(1000);
+       // $("#text").fadeIn(1000);
     }
 
     if(value > 600){
-        $("#endBtTrigger").trigger("click");
+        //$("#endBtTrigger").trigger("click");
         console.log("Hier wird gefeuert");
 
     }

@@ -137,7 +137,7 @@ html {
 
     #text {
         display:none;
-        color: szeneTextFontColor;
+        color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize;
         top: 8%;
@@ -246,8 +246,10 @@ html {
         position: fixed; 
         width: 4%;
         top:50%;
+        right: 20px;
         z-index: 4;
-        opacity: 0;
+        display: none;
+        opacity: 0.9;
     }
 
 #backBt{
