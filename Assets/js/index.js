@@ -3,8 +3,10 @@ const overlay = document.getElementById("overlay")
 const button = document.getElementById("modal__btn")
 
 window.onload = () => {
-    modal.classList.add("active")
-    overlay.classList.add("active")
+    if(history.length <= 1) {
+        modal.classList.add("active")
+        overlay.classList.add("active")
+    }
 }
 
 button.onclick = () => {
