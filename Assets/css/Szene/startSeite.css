@@ -96,8 +96,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: 200ms ease-in-out;
-  transition: 200ms ease-in-out;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +130,12 @@
   font-weight: bolder;
   font-size: 1em;
   padding-bottom: 1%;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.modal #modal__btn:hover {
+  color: black;
 }
 
 .modal.active {
