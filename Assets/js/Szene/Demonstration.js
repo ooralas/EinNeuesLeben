@@ -14,6 +14,7 @@ $(document).ready(function(){
     $("#nextBt").fadeIn(3000);
     $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
+    $("#scrollGif").delay(3000).fadeOut(2000);
 });
 
 
@@ -77,6 +78,8 @@ window.addEventListener('scroll',function(){
     startSound();
     startTimeBar(sound.duration());
     console.log("soundDur",sound.duration())
+
+   
     
 
 

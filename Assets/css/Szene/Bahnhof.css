@@ -281,6 +281,24 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
+#soundIcon {
+  width: 2%;
+  position: fixed;
+  left: 9.4%;
+  top: 28%;
+  opacity: 0.6;
+  z-index: 5;
+}
+
+#scrollGif {
+  position: fixed;
+  width: 7%;
+  top: 47%;
+  left: 85%;
+  z-index: 4;
+  opacity: 0.9;
+}
+
 #nextBt {
   position: fixed;
   width: 4%;

@@ -191,7 +191,7 @@ html body #main #zeichnungenContainer #rahmen {
 
 html body #main #text {
   display: none;
-  color: szeneTextFontColor;
+  color: black;
   position: fixed;
   font-size: 1.3vw;
   top: 17%;
@@ -306,6 +306,24 @@ html body #main #timeBar #progBar {
   100% {
     height: 100%;
   }
+}
+
+html body #soundIcon {
+  width: 2%;
+  position: fixed;
+  left: 11.4%;
+  top: 28%;
+  opacity: 0.6;
+  z-index: 5;
+}
+
+html body #scrollGif {
+  position: fixed;
+  width: 7%;
+  top: 47%;
+  left: 85%;
+  z-index: 4;
+  opacity: 0.9;
 }
 
 html body #nextBt {

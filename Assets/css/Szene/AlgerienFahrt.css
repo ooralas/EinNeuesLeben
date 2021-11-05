@@ -213,6 +213,14 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
+#soundIcon {
+  width: 2%;
+  position: fixed;
+  left: 16.4%;
+  top: 29%;
+  opacity: 0.6;
+}
+
 #nextBt {
   position: fixed;
   width: 4%;
