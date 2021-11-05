@@ -72,12 +72,16 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -1.5%;
-  margin-bottom: 11%;
+  margin-bottom: 10%;
   width: 25%;
 }
 
 #main #navigation a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-family: "Laila", sans-serif;
   color: black;
   text-decoration: none;
@@ -86,23 +90,27 @@ html ::-webkit-scrollbar-thumb {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 7px;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+@media (max-width: 1280px) {
+  #main #navigation a {
+    width: 45%;
+  }
 }
 
 #main #navigation a:active {
   color: inherit;
 }
 
+#main #navigation a:hover {
+  background-color: #f5c3c3;
+}
+
 #main #navigation a span {
   display: block;
   font-size: 1em;
-  width: 100%;
-}
-
-#main #navigation a span:hover {
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  background-color: white;
-  color: black;
 }
 
 #main #teilnehmer {

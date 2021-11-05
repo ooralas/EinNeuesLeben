@@ -39,34 +39,34 @@ html {
   #navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: -1.5%;
-    margin-bottom: 11% ;
+    margin-bottom: 10% ;
     width: 25%;
 
     a {
+      display: flex;
+      justify-content: space-around;
       font-family: $startSeiteFont;
       color: rgb(0, 0, 0);
       text-decoration: none;
       text-align: center;
       width: 40%;
-
       overflow: hidden;
-      
       border: 1px solid rgb(0, 0, 0);
       border-radius: 7px;
+      transition: 0.5s ease-in;
+      @media (max-width: 1280px) {
+        width: 45%;         
+      }
       &:active {
         color: inherit;
+      }
+      &:hover {
+        background-color: rgb(245, 195, 195);
       }
       
       span {
         display: block;
         font-size: 1em;
-        width: 100%;
-        &:hover {
-          transition: 0.5s ease-in;
-          background-color: white;
-          color: black;
-        }
       }
     }
   }
