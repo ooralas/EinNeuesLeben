@@ -28,15 +28,14 @@
     color: $szeneTextFontColor;
     font-family:  $startSeiteFont;
     font-size: 0.9vw;
-    width: 27%;
+    width: 45%;
     text-align:center;
-
   }
 
   #navigation {
     display: flex;
     justify-content: space-between;
-    margin: 1% 0;
+    margin: 3% 0;
     width: 25%;
 
     a {
@@ -45,22 +44,37 @@
       font-family: $startSeiteFont;
       color: $szeneTextFontColor;
       text-decoration: none;
-      width: 40%;
-      
+      overflow: hidden;
       border: 1.7px solid $szeneTextFontColor;
       border-radius: 7px;
+      width: 35%;
+      @media (max-width: 1280px) {
+        width: 45%;         
+      }
+
       &:active {
         color: inherit;
+      }
+      &:hover {
+        transition: 0.5s ease-in;
+        background-color: white;
       }
       
       span {
         display: block;
-        font-size: 1em;
-        &:hover {
-          transition: 0.5s ease-in;
-          background-color: white;
-          color: $szeneTextFontColor;
+        font-size: inherit;
+        padding-left: 10%;
+
+        @media (max-width: 1280px) {
+          font-size: 80%;
+          font-size: 74%;         
         }
+      }
+
+      img {
+        @media (max-width: 1280px) {
+          width: 15%;         
+        } 
       }
     }
   }
