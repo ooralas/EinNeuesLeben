@@ -121,7 +121,7 @@ html ::-webkit-scrollbar-thumb {
   top: 10%;
   width: 33%;
   font-family: "Indie Flower", cursive;
-  font-size: 1.12vw;
+  font-size: 0.82vw;
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
 }

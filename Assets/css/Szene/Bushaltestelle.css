@@ -118,7 +118,7 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: black;
   position: fixed;
-  font-size: 1.3vw;
+  font-size: 1vw;
   top: 14%;
   font-family: "Indie Flower", cursive;
   /* Landscape phones and down */
@@ -128,7 +128,7 @@ html ::-webkit-scrollbar-thumb {
 @media (max-width: 1280px) {
   .container #text {
     top: 14%;
-    font-size: 1.3vw;
+    font-size: 1vw;
   }
 }
 

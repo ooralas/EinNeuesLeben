@@ -91,36 +91,36 @@ html {
         color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize;
-        top: 11%;
+        top: 8%;
         width: 50%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
             font-size: $szeneTextFontSize + 0.1 ;
-            top: 10%;
+            top: 7%;
             
         }
 
         /* Landscape phones and down */
         @media (max-width: 480px) { 
-            top: 21%;
+            top: 18%;
         }
 
         /* Landscape phone to portrait tablet */
         @media (max-width: 640px) { 
-            top: 23%;
+            top: 20%;
         }
 
         @media (max-width: 731px) { 
-            top: 21%;
+            top: 18%;
         }
 
         @media (max-width: 800px) { 
-            top: 19%;
+            top: 16%;
         }
 
         @media (max-width: 1200px) { 
-            top: 19%;
+            top: 16%;
         }
 
         a {

@@ -34,7 +34,7 @@ html {
         justify-content:space-between;
         position: fixed;
 
-        // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
+        
         background-color: $szeneBackgroundColor;
 
         width: $width;
@@ -88,38 +88,38 @@ html {
 
     #text {
         display:none;
-        color: $szeneTextFontColor;
+        color: $szeneTextFontColor ;
         position: fixed;
         font-size: $szeneTextFontSize;
-        top: 12%;
-        width: 40%;
+        top: 5%;
+        width: 50%;
         font-family: $szeneTextFont;
 
         @media ( max-width: 1280px ) {
-            top: 12%;
+            top: 10%;
             
         }
 
         /* Landscape phones and down */
         @media (max-width: 480px) { 
-            top: 21%;
+            top: 14%;
         }
 
         /* Landscape phone to portrait tablet */
         @media (max-width: 640px) { 
-            top: 23%;
+            top: 15%;
         }
 
         @media (max-width: 731px) { 
-            top: 21%;
+            top: 14%;
         }
 
         @media (max-width: 800px) { 
-            top: 19%;
+            top: 12%;
         }
 
         @media (max-width: 1200px) { 
-            top: 19%;
+            top: 12%;
         }
 
         a {

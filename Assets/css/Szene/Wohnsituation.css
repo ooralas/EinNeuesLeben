@@ -132,7 +132,7 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: black;
   position: fixed;
-  font-size: 1.3vw;
+  font-size: 1vw;
   top: 19%;
   width: 37%;
   font-family: "Indie Flower", cursive;

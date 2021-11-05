@@ -175,7 +175,7 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: szeneTextFontColor;
   position: fixed;
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   width: 47%;
   font-family: "Indie Flower", cursive;
   top: 8%;

@@ -188,7 +188,7 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: black;
   position: fixed;
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   top: 8%;
   width: 45%;
   font-family: "Indie Flower", cursive;
