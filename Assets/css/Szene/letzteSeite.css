@@ -182,24 +182,39 @@ html ::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Laila", sans-serif;
+  margin: 0 30%;
+  height: auto;
+}
+
+#impressum span {
+  display: block;
+  font-weight: bold;
+  margin: 1% 0;
+  text-align: center;
 }
 
 #impressum p {
+  color: black;
+  text-align: justify;
+}
+
+#impressum #impressum__shortText {
   text-align: center;
-  font-family: "Laila", sans-serif;
-  font-size: 1.3em;
-  width: 70%;
 }
 
 @media (max-width: 1280px) {
-  #impressum p {
+  #impressum {
     font-size: 1em;
   }
 }
