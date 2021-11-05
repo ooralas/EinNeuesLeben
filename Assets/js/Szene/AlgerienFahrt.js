@@ -13,35 +13,15 @@ var sound = new Howl({
     $("#backBt").fadeIn(3000);
 });
 
- 
-
-
 window.addEventListener('scroll',function(){
-    
-    let value = window.scrollY;
     startSound();
     startTimeBar(sound.duration());
-    
-    console.log(value)
-
-    if(value > 50){
-        //$("#text").fadeIn(1000);
-    }
-
-    if(value > 200){
-        //$("#nextBtTrigger").trigger("click");
-        console.log("Hier wird gefeuert");
-    }
-    
-    console.log(value)
 });
 
 let startSound = () => {
     if(!sound.playing()){
         sound.fade(0, 0.4, 5000);
         sound.play();
-    }else{
-        console.log("Sound is: ", sound.playing());
     }
 }
 
