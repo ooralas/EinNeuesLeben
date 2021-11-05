@@ -4,7 +4,6 @@ let soundSrc = "";
 let getSceneName = () => {
     let path = window.location.pathname;
     let page = path.split("/").pop();
-
     return page;
 }
 const soundURL = getSceneName();
@@ -29,8 +28,6 @@ switch (soundURL) {
         break;
 }
 
-console.log("soundSrc", soundSrc);
-console.log("SoundURL", soundURL);
 
 
 var sound = new Howl({
@@ -38,8 +35,7 @@ var sound = new Howl({
     html5:true
   });
 
-  $(document).ready(function(){
-
+$(document).ready(function(){
     $("#nextBt").fadeIn(3000);
     $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
@@ -49,32 +45,14 @@ var sound = new Howl({
 
 
 window.addEventListener('scroll',function(){
-    
-    let value = window.scrollY;
     startSound();
     startTimeBar(sound.duration());
-    
-    console.log(value)
-
-    if(value > 50){
-       // $("#text").fadeIn(1000);
-    }
-
-    if(value > 600){
-        //$("#endBtTrigger").trigger("click");
-        console.log("Hier wird gefeuert");
-
-    }
-    
-    console.log(value)
 });
 
 let startSound = () => {
     if(!sound.playing()){
         sound.fade(0, 0.4, 5000);
         sound.play();
-    }else{
-        console.log("Sound is: ", sound.playing());
     }
 }
 
