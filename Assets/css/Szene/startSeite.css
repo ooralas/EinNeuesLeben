@@ -33,6 +33,17 @@
   background-color: #fae6c0;
 }
 
+#main #main__linkToImpressum {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 9%;
+  margin-top: 1%;
+}
+
+#main #main__linkToImpressum img {
+  width: 1.7vw;
+}
+
 #main #headLine {
   color: black;
   font-size: 3.5vw;

@@ -17,7 +17,15 @@
   min-height: 100vh;
   background-color: $szeneBackgroundColor;
 
- 
+ #main__linkToImpressum{
+    align-self: flex-end;
+    margin-right: 9%;
+    margin-top: 1%;
+   img {
+     width: 1.7vw;
+   }
+ }
+
   #headLine{
     color: $szeneTextFontColor;
     font-size: 3.5vw;
