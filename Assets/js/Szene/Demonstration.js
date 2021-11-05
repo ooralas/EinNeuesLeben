@@ -10,24 +10,14 @@ var sound = new Howl({
 });
 
 $(document).ready(function(){
-
     $("#nextBt").fadeIn(3000);
     $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
-
 });
 
-
-
-
-
 window.addEventListener('scroll',function(){
-    
-
     $("#scrollGif").fadeOut(1500);
-
     let value = window.scrollY;
-    let value2 = this.window.screenY;
    
     SOLDIER1.style.left = value * 0.005 + 20 + '%';
     SOLDIER1.style.width = value * 0.005 + 60 + '%';
@@ -76,24 +66,11 @@ window.addEventListener('scroll',function(){
         CROWD.style.left =  -value * 0.014 + 53.6 + '%';
         
     }
-    
-    console.log(value);
+
     startSound();
     startTimeBar(sound.duration());
-    console.log("soundDur",sound.duration())
-
-   
-    
-
-
-    if(value > 500){
-        //$("#backBt").fadeIn(1000);
-        //$("#text").fadeIn(1000);
-    }
-
     if(value > 900){
         $("#nextBtTrigger").trigger("click");
-        console.log("Hier wird gefeuert");
     }
 });
 
@@ -101,8 +78,6 @@ let startSound = () => {
     if(!sound.playing()){
         sound.fade(0, 0.4, 5000);
         sound.play();
-    }else{
-        console.log("Sound is: ", sound.playing());
     }
 }
 
