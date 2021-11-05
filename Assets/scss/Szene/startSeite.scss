@@ -40,15 +40,14 @@
     width: 25%;
 
     a {
+      display: flex;
+      justify-content: space-around;
       font-family: $startSeiteFont;
       color: $szeneTextFontColor;
       text-decoration: none;
-      text-align: center;
       width: 40%;
-
-      overflow: hidden;
       
-      border: 2px solid $szeneTextFontColor;
+      border: 1.7px solid $szeneTextFontColor;
       border-radius: 7px;
       &:active {
         color: inherit;
@@ -57,7 +56,6 @@
       span {
         display: block;
         font-size: 1em;
-        width: 100%;
         &:hover {
           transition: 0.5s ease-in;
           background-color: white;

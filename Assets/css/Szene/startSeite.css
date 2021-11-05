@@ -59,13 +59,16 @@
 }
 
 #main #navigation a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-family: "Laila", sans-serif;
   color: black;
   text-decoration: none;
-  text-align: center;
   width: 40%;
-  overflow: hidden;
-  border: 2px solid black;
+  border: 1.7px solid black;
   border-radius: 7px;
 }
 
@@ -76,7 +79,6 @@
 #main #navigation a span {
   display: block;
   font-size: 1em;
-  width: 100%;
 }
 
 #main #navigation a span:hover {
