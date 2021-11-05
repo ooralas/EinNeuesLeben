@@ -16,12 +16,13 @@ var sound = new Howl({
     $("#nextBt").fadeIn(3000);
     $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
-    $("#scrollGif").delay(3000).fadeOut(2000);
+    
 });
 
 
 window.addEventListener('scroll',function(){
     
+    $("#scrollGif").fadeOut(1500);
     var value = window.scrollY;
     BOOT.style.left =  value * 0.0121  + '%';
     BACKGROUND.style.left = 10 -value * 0.0064 + '%';

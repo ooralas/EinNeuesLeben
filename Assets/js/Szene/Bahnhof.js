@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("#nextBt").fadeIn(3000);
     $("#text").fadeIn(3000);
     $("#backBt").fadeIn(3000);
-    $("#scrollGif").delay(3000).fadeOut(2000);
+    
 });
 
 
@@ -22,6 +22,8 @@ $(document).ready(function(){
 
 window.addEventListener('scroll',function(){
     
+    $("#scrollGif").fadeOut(1500);
+
     let value = window.scrollY;
 
     if(value<1600){
