@@ -1,13 +1,14 @@
 @import "../_font.scss";
 @import "../scrollbar";
 @import "../navigationStyle";
+@import "../soundIcon";
 
-// MediaQuery der Szene bei 1280x600
 @mixin mediaQueryByLabtop {
     @media ( max-width: 1280px ) {
         top: 20%;
     }
 } 
+
 
 
 html {
@@ -72,6 +73,7 @@ html {
             }
         }
     }
+
 
     #background {
         top: 30%;
@@ -161,6 +163,8 @@ html {
     
 }
 
+
+
 #soundIcon {
     width: 2%;
     position: fixed;
@@ -168,6 +172,7 @@ html {
     top: 29%;
     opacity: $iconOppacity;
 }
+
 
 
 #nextBt{

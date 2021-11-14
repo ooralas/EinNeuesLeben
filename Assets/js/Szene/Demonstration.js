@@ -3,6 +3,8 @@ const CROWD = document.getElementById("crowd");
 const SOLDIER1 = document.getElementById("soldier1");
 const SOLDIER2 = document.getElementById("soldier2");
 const PROGRESSIVEBAR = document.getElementById("progBar");
+var playBtn = document.getElementById("playButton");
+//playBtn.style.backgroundImage = "url('play.png') no repeat";
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/Demonstration.mp3'],
@@ -74,10 +76,18 @@ window.addEventListener('scroll',function(){
     }
 });
 
-let startSound = () => {
-    if(!sound.playing()){
-        sound.fade(0, 0.4, 5000);
+
+
+function play() {
+    if (sound.playing()){
+        sound.pause();
+        playBtn.style.background = "url('pause.png')";
+
+    }
+
+    else{
         sound.play();
+        playBtn.style.background = "url(play.png)";
     }
 }
 

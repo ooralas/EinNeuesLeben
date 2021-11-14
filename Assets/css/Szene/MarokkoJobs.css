@@ -105,7 +105,7 @@ html ::-webkit-scrollbar-thumb {
   font-size: 0.9vw;
   top: 11%;
   width: 47%;
-  font-family: "Indie Flower", cursive;
+  font-family: "Old Standard TT", serif;
 }
 
 @media (max-width: 1280px) {

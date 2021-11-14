@@ -1,5 +1,7 @@
 const PROGRESSIVEBAR = document.getElementById("progBar");
-
+let playBtn = document.getElementById("playButton");
+//playBtn.style.backgroundImage = "url('play.png') no repeat";
+//playBtn.style.left = 30 + "%";
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/AlgerienFahrt.mp3'],
@@ -22,6 +24,21 @@ let startSound = () => {
     if(!sound.playing()){
         sound.fade(0, 0.4, 5000);
         sound.play();
+    }
+}
+
+function play() {
+    if (sound.playing()){
+        sound.pause();
+        
+        playBtn.src = 'images/play.png';
+        //playBtn.style.opacity = 0.1;
+    }
+
+    else{
+        sound.play();
+        playBtn.style.backgroundImage = "url('image.png')";
+        //playBtn.style.opacity = 0.5;
     }
 }
 
