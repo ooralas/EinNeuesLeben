@@ -256,7 +256,7 @@ html {
     position: fixed;
     left: 14.4%;
     top: 19%;
-    opacity: 0.6;
+    opacity: $iconOppacity;
 }
 
 #scrollGif{
@@ -265,7 +265,7 @@ html {
     top:47%;
     left: 85%;
     z-index: 4;
-    opacity: 0.9;
+    opacity: $iconOppacity;
 }
 
 #nextBt{

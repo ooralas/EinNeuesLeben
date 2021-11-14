@@ -332,7 +332,7 @@ html ::-webkit-scrollbar-thumb {
   top: 47%;
   left: 85%;
   z-index: 4;
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 #nextBt {

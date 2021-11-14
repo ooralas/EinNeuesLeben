@@ -239,7 +239,7 @@ html {
         position: fixed;
         left: 11.4%;
         top: 28%;
-        opacity: 0.6;
+        opacity: $iconOppacity;
         z-index: 5;
     }
     
@@ -250,7 +250,7 @@ html {
         top:47%;
         left: 85%;
         z-index: 4;
-        opacity: 0.9;
+        opacity: $iconOppacity;
     }
     
     #nextBt{
