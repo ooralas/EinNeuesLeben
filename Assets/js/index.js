@@ -5,8 +5,6 @@ const button = document.getElementById("modal__btn")
 
 let isPageReloaded = () => {
     if (sessionStorage.getItem('pageHasBeenLoaded')) {
-        console.log('this is a reload');
-
         return true;
     }
     sessionStorage.setItem('pageHasBeenLoaded', 'true');
@@ -14,19 +12,17 @@ let isPageReloaded = () => {
 }
 
 
-if(!isPageReloaded()) {
-    setTimeout(() => {
-        // window.onload = () => {
-            // if(history.length < 2) {
+if(navigator.userAgent.match(/firefox|fxios/i)){
+    if(!isPageReloaded()) {
+        setTimeout(() => {
                 modal.classList.add("active")
                 overlay.classList.add("active")
-            // }
-        // } 
-    }, 1500);
-    
-    button.onclick = () => {
-        modal.classList.remove("active")
-        overlay.classList.remove("active")
-    } 
-}
+        }, 1500);
+        
+        button.onclick = () => {
+            modal.classList.remove("active")
+            overlay.classList.remove("active")
+        } 
+    }   
+} 
 
