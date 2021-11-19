@@ -28,25 +28,25 @@
               </a>
             <div id="headLine" class="disable_select">Ein Neues Leben</div>
 
-            <div id="text">Abdoulrachmane Diallo hat es vom Flüchtling zum Fachmann im Gastgewerbe in Düsseldorf geschafft. Als Abdoulrachmane 2016 nach Düsseldorf kam, 
+            <div class="disable_select" id="text">Abdoulrachmane Diallo hat es vom Flüchtling zum Fachmann im Gastgewerbe in Düsseldorf geschafft. Als Abdoulrachmane 2016 nach Düsseldorf kam, 
                 war sein Aufenthalt in Deutschland alles andere als gesichert. 
                 Doch der junge Mann hat nicht aufgegeben, er hat die Sprache gelernt und einen Ausbildungsplatz in einem Düsseldorfer Vier– Sterne – Hotel bekommen. Dies ist seine Geschichte.
             </div>
 
 
-            <div id="navigation">
+            <div  id="navigation">
 
                 <a href="./Szene/Demonstration.html" id="linkToTonspur">
                     <div>
-                        <img src="/Assets/img/Tonspur.svg">
-                        <span>Tonspur</span>
+                        <img draggable="false" src="/Assets/img/Tonspur.svg">
+                        <span class="disable_select">Tonspur</span>
                     </div>
                 </a>
 
-                <a href="./kartenansicht.html" id="linkToKartenansicht">
+                <a  href="./kartenansicht.html" id="linkToKartenansicht">
                     <div>
-                        <img src="/Assets/img/Kartenansicht.svg">
-                        <span>Kartenansicht</span>
+                        <img draggable="false" src="/Assets/img/Kartenansicht.svg">
+                        <span class="disable_select">Kartenansicht</span>
                     </div>
                 </a> 
 
@@ -54,8 +54,10 @@
             <img id="karte" draggable="false" src="/Assets/img/LandingKarte.jpg" alt="Karte">
         </div>
         <div class="modal" id="modal">
-            <p id="modal__text">Um Die Seite vollständig nutzen zu können, aktivieren Sie bitte das Autoplay in Ihrem Browser</p>
-            <p id="modal__text"> Wenn Sie nicht wissen, wie Sie Autoplay aktivieren, drücken Sie <a href="https://support.mozilla.org/de/kb/automatische-tonwiedergabe-erlauben-bzw-blockieren" target="_blank" >hier</a> </p>
+            <section id="modal__text" class="disable_select">
+                <p>Um Die Seite vollständig nutzen zu können, aktivieren Sie bitte das Autoplay in Ihrem Browser.</p>
+               <p>Wenn Sie nicht wissen, wie Sie Autoplay aktivieren können, drücken Sie <a href="https://support.mozilla.org/de/kb/automatische-tonwiedergabe-erlauben-bzw-blockieren" target="_blank" >hier</a> </p> 
+            </section>
             <button id="modal__btn">Okay</button>
         </div>
         <div id="overlay"></div>

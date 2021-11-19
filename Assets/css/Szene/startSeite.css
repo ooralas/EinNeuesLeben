@@ -125,10 +125,21 @@
 }
 
 .modal #modal__text {
-  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 25px;
   font-family: "Laila", sans-serif;
   color: white;
   font-size: 1.2em;
+}
+
+.modal #modal__text p {
+  text-align: center;
 }
 
 .modal #modal__btn {

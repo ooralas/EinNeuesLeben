@@ -95,11 +95,17 @@
   z-index: 10;
 
   #modal__text {
-    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
     font-family: $startSeiteFont;
     color: white;
     
     font-size: 1.2em;
+
+    p {
+      text-align: center;
+    }
   }
 
   #modal__btn {
