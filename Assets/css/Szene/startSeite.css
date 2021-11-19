@@ -53,7 +53,7 @@
 #main #text {
   color: black;
   font-family: "Laila", sans-serif;
-  font-size: 0.9vw;
+  font-size: 1.1rem;
   width: 45%;
   text-align: center;
 }
@@ -62,32 +62,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 3% 0;
-  width: 25%;
 }
 
 #main #navigation a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: "Laila", sans-serif;
-  color: black;
-  text-decoration: none;
-  overflow: hidden;
   border: 1.7px solid black;
   border-radius: 7px;
-  width: 35%;
-}
-
-@media (max-width: 1280px) {
-  #main #navigation a {
-    width: 45%;
-  }
+  text-decoration: none;
+  margin: 0 20px;
 }
 
 #main #navigation a:active {
@@ -100,23 +82,18 @@
   background-color: white;
 }
 
-#main #navigation a span {
-  display: block;
-  font-size: inherit;
-  padding-left: 10%;
+#main #navigation a div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1px 20px;
+  gap: 2px;
 }
 
-@media (max-width: 1280px) {
-  #main #navigation a span {
-    font-size: 80%;
-    font-size: 74%;
-  }
-}
-
-@media (max-width: 1280px) {
-  #main #navigation a img {
-    width: 15%;
-  }
+#main #navigation a div span {
+  font-family: "Laila", sans-serif;
+  color: black;
 }
 
 #main #karte {

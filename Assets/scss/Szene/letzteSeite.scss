@@ -38,35 +38,33 @@ html {
 
   #navigation {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10% ;
-    width: 25%;
+    margin-bottom: 10%;
 
     a {
-      display: flex;
-      justify-content: space-around;
-      font-family: $startSeiteFont;
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      text-align: center;
-      width: 40%;
-      overflow: hidden;
-      border: 1px solid rgb(0, 0, 0);
+      border: 1.7px solid $szeneTextFontColor;
       border-radius: 7px;
-      transition: 0.5s ease-in;
-      @media (max-width: 1280px) {
-        width: 45%;         
-      }
+      text-decoration: none;
+      margin: 0 20px;
+      transition: .4s;
+
       &:active {
         color: inherit;
       }
       &:hover {
+        transition: 0.2s ease-in;
         background-color: rgb(245, 195, 195);
       }
       
-      span {
-        display: block;
-        font-size: 1em;
+      div {
+        position: relative;
+        display: flex;
+        margin: 1px 20px;
+        gap: 2px;
+        
+        span {
+          font-family: $startSeiteFont;
+          color: $szeneTextFontColor;
+        }
       }
     }
   }
@@ -137,7 +135,7 @@ html {
     align-items: center;
     justify-content: center;
     font-family: $startSeiteFont;
-    margin: 0 30%;
+    margin: 1% 30%;
     height: auto;
 
     span {
