@@ -94,6 +94,7 @@ html {
         width: 33%;
         font-family: $szeneTextFont;
         font-size: $szeneTextFontSize - 0.08;
+        text-align: center;
 
         @media ( max-width: 1280px ) {
             top: 8.5%;
@@ -190,14 +191,25 @@ html {
     width: 2%;
     position: fixed;
     left: 20%;
-    top: 50%;
+    top: 48.4%;
+    opacity: $iconOppacity;
+    z-index: 5;
+}
+
+
+#scrollGif{
+    position: fixed; 
+    width: 4%;
+    top:47%;
+    left: 85%;
+    z-index: 4;
     opacity: $iconOppacity;
 }
 
 #nextBt{
     position: fixed; 
-    width: 4%;
-    top:50%;
+    width: 3%;
+    top:47.4%;
     right: 20px;
     z-index: 4;
     display: none;
@@ -206,13 +218,13 @@ html {
 
 #backBt{
     position: fixed; 
-    width: 4%;
-    left: 20px;
-    top:50%;
-    z-index: 4;
-    display: none;
-    opacity: 0.9;
-    
+        width: 3%;
+        left: 20px;
+        top:47.4%;
+        z-index: 4;
+        display: none;
+        opacity: 0.9;
+        
 }
 
 
