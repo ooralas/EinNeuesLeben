@@ -78,17 +78,5 @@ window.addEventListener('scroll',function(){
 
 
 
-function play() {
-    if (sound.playing()){
-        sound.pause();
-        playBtn.style.background = "url('pause.png')";
-
-    }
-
-    else{
-        sound.play();
-        playBtn.style.background = "url(play.png)";
-    }
-}
 
 let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";

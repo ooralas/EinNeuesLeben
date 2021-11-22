@@ -311,16 +311,16 @@ html body #main #timeBar #progBar {
 html body #soundIcon {
   width: 2%;
   position: fixed;
-  left: 11.4%;
-  top: 28%;
+  left: 9%;
+  top: 50%;
   opacity: 0.6;
   z-index: 5;
 }
 
 html body #scrollGif {
   position: fixed;
-  width: 7%;
-  top: 47%;
+  width: 4%;
+  top: 50%;
   left: 85%;
   z-index: 4;
   opacity: 0.6;

@@ -251,8 +251,8 @@ html ::-webkit-scrollbar-thumb {
 #soundIcon {
   width: 2%;
   position: fixed;
-  left: 14.4%;
-  top: 19%;
+  left: 12%;
+  top: 50%;
   opacity: 0.6;
 }
 

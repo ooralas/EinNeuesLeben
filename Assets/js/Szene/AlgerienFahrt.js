@@ -27,19 +27,6 @@ let startSound = () => {
     }
 }
 
-function play() {
-    if (sound.playing()){
-        sound.pause();
-        
-        playBtn.src = 'images/play.png';
-        //playBtn.style.opacity = 0.1;
-    }
 
-    else{
-        sound.play();
-        playBtn.style.backgroundImage = "url('image.png')";
-        //playBtn.style.opacity = 0.5;
-    }
-}
 
 let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
