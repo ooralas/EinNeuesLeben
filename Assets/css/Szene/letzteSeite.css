@@ -197,9 +197,13 @@ html ::-webkit-scrollbar-thumb {
   height: auto;
 }
 
+#impressum .impressum__titel {
+  font-size: 1.5em;
+}
+
 #impressum span {
   display: block;
-  font-weight: bold;
+  font-weight: 900;
   margin: 1% 0;
   text-align: center;
 }
