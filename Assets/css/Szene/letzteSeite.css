@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 .disable_select {
   -webkit-user-select: none;
@@ -52,31 +52,63 @@ html ::-webkit-scrollbar-thumb {
 
 #main #headLine {
   color: black;
-  font-size: 4vw;
   font-family: "Laila", sans-serif;
-  width: 40%;
+  width: 100%;
+  font-size: calc(0.75em + 6vmin);
+  margin: 0 80%;
   text-align: center;
 }
 
 #main #ueberProjekt {
   font-family: "Laila", sans-serif;
-  font-size: 1vw;
-  width: 35%;
   text-align: center;
+  font-weight: 300;
+  margin: 0 10%;
+  /* Small Screen */
+  /* Medium Screen */
+  /* Large Screen */
+  /* X Large Screen */
+}
+
+@media (min-width: 768px) {
+  #main #ueberProjekt {
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  #main #ueberProjekt {
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main #ueberProjekt {
+    margin: 0 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  #main #ueberProjekt {
+    margin: 0 33%;
+  }
 }
 
 #main #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 20px;
 }
 
 #main #navigation a {
   border: 1.7px solid black;
   border-radius: 7px;
   text-decoration: none;
-  margin: 0 20px;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -112,33 +144,42 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
+  gap: 19px;
   font-family: "Laila", sans-serif;
-  font-size: 0.7vw;
+  font-size: 1em;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Small Screen */
+  /* Large Screen */
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   #main #teilnehmer {
-    margin-bottom: -2%;
+    margin: 0 3%;
   }
+}
+
+@media (min-width: 1500px) {
+  #main #teilnehmer {
+    gap: 50px;
+  }
+}
+
+#main #teilnehmer span {
+  font-weight: 500;
 }
 
 #main #teilnehmer .listStyleNone {
   list-style: none;
-  font-size: 1vw;
+  font-weight: 300;
 }
 
-#main #linie {
-  background-color: black;
+#main hr {
+  width: 50%;
   height: 1px;
-  width: 55%;
-  display: block;
-}
-
-@media (max-width: 1280px) {
-  #main #linie {
-    margin-bottom: -13%;
-  }
+  background: black;
+  margin-bottom: -25px;
 }
 
 #main #unterstuetztVon {
@@ -155,22 +196,66 @@ html ::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  margin: 0 2%;
+  /* Small Screen */
+  /* Medium Screen */
+  /* Large Screen */
+  /* X Large Screen */
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 768px) {
   #main #unterstuetztVon {
-    margin-top: 10%;
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  #main #unterstuetztVon {
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main #unterstuetztVon {
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #main #unterstuetztVon {
+    margin: 0 30%;
   }
 }
 
 #main #unterstuetztVon p {
   margin-top: 4%;
+  margin-right: 4px;
   height: 100%;
   width: 60%;
   font-family: "Laila", sans-serif;
-  font-size: 0.6vw;
-  font-weight: 600;
+  font-size: 1.8vw;
+  font-weight: 400;
+  /* Small Screen */
+  /* Medium Screen */
+  /* Large Screen */
+}
+
+@media (min-width: 768px) {
+  #main #unterstuetztVon p {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #main #unterstuetztVon p {
+    font-size: 1.1vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main #unterstuetztVon p {
+    font-size: 0.7vw;
+  }
 }
 
 #main #unterstuetztVon .logo {

@@ -22,29 +22,50 @@ html {
  
   #headLine{
     color: rgb(0, 0, 0);
-    font-size: 4vw;
     font-family: $startSeiteFont;
-    width: 40%;
+    width: 100%;
+    font-size: calc(0.75em + 6vmin);
+    margin: 0 80%;
     text-align: center;
   }
 
 
   #ueberProjekt {
     font-family: $startSeiteFont;
-    font-size: 1vw;
-    width: 35%;
     text-align: center;
+    font-weight: 300;
+    margin: 0 10%;
+
+    /* Small Screen */
+    @media (min-width: 768px) {
+      margin: 0 15%;
+    }
+    /* Medium Screen */
+    @media (min-width: 992px) {
+      margin: 0 20%;
+    }
+    /* Large Screen */
+    @media (min-width: 1200px) {
+      margin: 0 25%;
+    }
+    /* X Large Screen */
+    @media (min-width: 1600px) {
+      margin: 0 33%;
+    }
+    
+
   }
 
   #navigation {
     display: flex;
-    margin-bottom: 10%;
+    justify-content:center;
+    width: 100%;
+    gap: 20px;
 
     a {
       border: 1.7px solid $szeneTextFontColor;
       border-radius: 7px;
       text-decoration: none;
-      margin: 0 20px;
       transition: .4s;
 
       &:active {
@@ -72,51 +93,86 @@ html {
   #teilnehmer {
       display: flex;
       justify-content: space-between;
-      width: 40%;
-    
+      gap: 19px;
       font-family: $startSeiteFont;
-      font-size: 0.7vw;
-    
-      @media ( max-width: 1280px ) {
-        margin-bottom: -2%;   
+      font-size: 1em;
+      margin: 0 auto;
+      flex-wrap: wrap;
+
+      /* Small Screen */
+      @media (max-width: 768px) {
+        margin:0 3%;
+      }
+
+      /* Large Screen */
+      @media (min-width: 1500px) {
+        gap: 50px;
+      }
+
+      span {
+        font-weight: 500;
       }
 
       .listStyleNone {
         list-style: none;
-        font-size: 1vw;
+        font-weight: 300;
       }
   }
 
-  #linie {
-    background-color: black;
+  
+  hr {
+    width: 50%;
     height: 1px;
-    width: 55%;
-    display: block;
-    
-    @media ( max-width: 1280px ) {
-      margin-bottom: -13%;   
-    }
+    background: black;
+    margin-bottom: -25px;
   }
 
   #unterstuetztVon {
-    // margin-top: 13%;
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    width: 40%;
+    margin:0 2%;
 
-    @media ( max-width: 1280px ) {
-      margin-top: 10%;
+    /* Small Screen */
+    @media (min-width: 768px) {
+      margin:0 10%;
     }
-
+    /* Medium Screen */
+    @media (min-width: 992px) {
+      margin:0 15%;
+    }
+    /* Large Screen */
+    @media (min-width: 1200px) {
+      margin:0 20%;
+    }
+    /* X Large Screen */
+    @media (min-width: 1400px) {
+      margin:0 30%;
+    }
+    
     p {
         margin-top: 4%;
+        margin-right: 4px;
         height: 100%;
         width: 60%;
         font-family: $startSeiteFont;
-        font-size: 0.6vw;
-        font-weight: 600;
+        // font-size: 0.6vw;
+        font-size: 1.8vw;
+        font-weight: 400;
+
+        /* Small Screen */
+        @media (min-width: 768px) {
+          font-size: 1.5vw;
+        }
+        /* Medium Screen */
+        @media (min-width: 992px) {
+          font-size: 1.1vw;
+        }
+        /* Large Screen */
+        @media (min-width: 1200px) {
+          font-size: 0.7vw;
+        }
     }
 
     .logo {
