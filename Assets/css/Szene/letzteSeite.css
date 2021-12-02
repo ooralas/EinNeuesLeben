@@ -193,19 +193,64 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Laila", sans-serif;
-  margin: 1% 30%;
+  margin: 1% 10%;
   height: auto;
+  /* Small Screen */
+  /* Medium Screen */
+  /* Large Screen */
+}
+
+@media (min-width: 768px) {
+  #impressum {
+    margin: 1% 17%;
+  }
+}
+
+@media (min-width: 992px) {
+  #impressum {
+    margin: 1% 19%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #impressum {
+    margin: 1% 30%;
+  }
 }
 
 #impressum .impressum__titel {
-  font-size: 1.5em;
+  font-size: 5vw;
+  /* Small Screen */
+  /* Medium Screen */
+  /* Large Screen */
+}
+
+@media (min-width: 768px) {
+  #impressum .impressum__titel {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #impressum .impressum__titel {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #impressum .impressum__titel {
+    font-size: 1.5vw;
+  }
 }
 
 #impressum span {
   display: block;
   font-weight: 900;
-  margin: 1% 0;
+  margin: 3% 0;
   text-align: center;
+  font-size: 16px;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 #impressum p {
@@ -215,12 +260,6 @@ html ::-webkit-scrollbar-thumb {
 
 #impressum #impressum__shortText {
   text-align: center;
-}
-
-@media (max-width: 1280px) {
-  #impressum {
-    font-size: 1em;
-  }
 }
 
 .disable_select {

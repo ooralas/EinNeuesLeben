@@ -135,17 +135,46 @@ html {
     align-items: center;
     justify-content: center;
     font-family: $startSeiteFont;
-    margin: 1% 30%;
+    margin: 1% 10%;
     height: auto;
+
+    /* Small Screen */
+    @media (min-width: 768px) {
+      margin: 1% 17%;
+    }
+    /* Medium Screen */
+    @media (min-width: 992px) {
+      margin: 1% 19%;
+    }
+    /* Large Screen */
+    @media (min-width: 1200px) {
+      margin: 1% 30%;
+    }
+
     .impressum__titel {
-      font-size: 1.5em;
+      font-size: 5vw;
+         /* Small Screen */
+         @media (min-width: 768px) {
+          font-size: 3vw;
+        }
+        /* Medium Screen */
+        @media (min-width: 992px) {
+          font-size: 2vw;
+        }
+        /* Large Screen */
+        @media (min-width: 1200px) {
+          font-size: 1.5vw;
+        }
     }
 
     span {
       display: block;
       font-weight:900;
-      margin: 1% 0;
+      margin: 3% 0;
       text-align: center;
+      font-size: 16px;
+      width: 100%;
+      overflow-wrap: break-word;
     }
 
     p {
@@ -158,9 +187,6 @@ html {
    }
 
 
-    @media ( max-width: 1280px ) {
-      font-size: 1em;   
-    }
   }
 
 
