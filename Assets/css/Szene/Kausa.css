@@ -101,7 +101,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .container #background {
-  top: 20%;
+  top: 24%;
   left: 32.5%;
   width: 35%;
   position: fixed;
@@ -118,7 +118,7 @@ html ::-webkit-scrollbar-thumb {
   display: none;
   color: black;
   position: fixed;
-  top: 10%;
+  top: 12%;
   width: 33%;
   font-family: "Old Standard TT", serif;
   font-size: 0.82vw;

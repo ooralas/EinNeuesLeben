@@ -119,7 +119,7 @@ html ::-webkit-scrollbar-thumb {
   color: black;
   position: fixed;
   font-size: 1vw;
-  top: 14%;
+  top: 12%;
   font-family: "Old Standard TT", serif;
   text-align: center;
   /* Landscape phones and down */
