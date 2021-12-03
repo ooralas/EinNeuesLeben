@@ -2,12 +2,13 @@
 @import "../scrollbar";
 @import "../navigationStyle";
 
-// MediaQuery der Szene bei 1280x600
+
 @mixin mediaQueryByLabtop {
     @media ( max-width: 1280px ) {
         top: 20%;
     }
 } 
+
 
 
 html {
@@ -21,24 +22,23 @@ html {
 }
 
 #container {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     #navigation {
         display: flex;
         justify-content:space-between;
         position: fixed;
 
-        
+        // TODO -> Die Hintergrund-frabe muss entfernt werden, nachdem die Hintergrundfarbe der Seite geändert werden
         background-color: $szeneBackgroundColor;
 
         width: $width;
         height: auto;
         align-self: flex-end;
-        margin-right: $marginTop;
+        margin-right: $marginRight;
         margin-top: $marginTop;
 
         @media ( max-width: 1280px ) {
@@ -54,6 +54,7 @@ html {
             text-decoration: none;
             color: inherit;
             font-family: $kartenAnsichtFont;
+            margin-top: 1%;
 
             &:active {
                 color: inherit;
@@ -72,108 +73,116 @@ html {
             }
         }
     }
-
+    
     #background {
-        top: 30%;
+        top: 24%;
         left: 25%;
         width: 50%;
         position: fixed;
         z-index: 0;
+
         @include mediaQueryByLabtop;
     }
 
     #rahmen {
-        top: 30%;
+        top: 24%;
         left: 25%;
         width: 50.1%;
         position: fixed;
         z-index: 3;
+
         @include mediaQueryByLabtop;
     }
-
+    
     #text {
         display:none;
-        color: szeneTextFontColor;
+        color: $szeneTextFontColor;
         position: fixed;
-        font-size:$szeneTextFontSize;
-        width: 42%;
-        top: 22%;
+        font-size: $szeneTextFontSize + 0.1;
+        top: 13.5%;
+        width: 37%;
         font-family: $szeneTextFont;
+        text-align: center;
+
         @media ( max-width: 1280px ) {
-            top: 11%;
+            top: 13%;
         }
     }
 
-   
-}
 
-
-#timeBar {
-    background-color: rgba(116, 116, 116, 0.212);
-    width: 6px;
-    height: 45%;
-    position: absolute;
-    left: 17%;
-    top: 34%;
-    border-radius: 10px;
-    position: fixed;
-    overflow: hidden;
-    
-    @media ( max-width: 1441px ) {
-        top: 31%;
-    }
-    
-    @media ( max-width: 1366px ) {
-        top: 31%;
-        height: 41%;
-    }
-
-    @media ( max-width: 1092px ) {
-        top: 31%;
-        height: 33%;
-    }
-
-    @media ( max-width: 860px ) {
-        top: 31%;
-        height: 25%;
-    }
-
-    @media ( max-width: 1280px ) {
-        top: 26%;
+    #timeBar {
+        background-color: rgba(116, 116, 116, 0.212);
+        width: 6px;
         height: 49%;
+        left: 18%;
+        top: 28%;
+        border-radius: 10px;
+        position: fixed;
+        overflow: hidden;
+        z-index: 4;
+        
+        @media ( max-width: 1440px ) {
+            top: 32%;
+            height: 42%;
+        }
+        
+        @media ( max-width: 1280px ) {
+            height: 50%;
+            top: 31%;
+        }
+    
+        @media ( max-width: 1024px ) {
+            top: 31%;
+            height: 30%;
+        }
+    
+        @media ( max-width: 768px ) {
+            top: 32%;
+            height: 22%;
+        }
+        
+        #progBar {
+            width: 100%;
+            height:0%;
+            background-color: rgba(114, 114, 114, 0.383);
+        }
     }
     
-    #progBar {
-        width: 100%;
-        height:0%;
-        background-color: rgba(114, 114, 114, 0.383);
-    }
-}
-
-@keyframes fillTimeBar {
-    0% {
-        height: 0;
-    }
-
-    100% {
-        height: 100%;
-    }
+    @keyframes fillTimeBar {
+        0% {
+            height: 0;
+        }
     
+        100% {
+            height: 100%;
+        }
+        
+    }
 }
 
 #soundIcon {
     width: 2%;
     position: fixed;
-    left: 16.4%;
-    top: 29%;
-    opacity: 0.6;
+    left: 15%;
+    top: 48.4%;
+    opacity: $iconOppacity;
+    z-index: 5;
 }
 
 
-#nextBt{
+#scrollGif{
     position: fixed; 
     width: 4%;
-    top:50%;
+    top:47%;
+    left: 85%;
+    z-index: 4;
+    opacity: $iconOppacity;
+}
+
+#nextBt{
+    position: fixed; 
+    width: 3%;
+    top:47.4%;
     right: 20px;
     z-index: 4;
     display: none;
@@ -182,14 +191,15 @@ html {
 
 #backBt{
     position: fixed; 
-    width: 4%;
-    left: 20px;
-    top:50%;
-    z-index: 4;
-    display: none;
-    opacity: 0.9;
-    
+        width: 3%;
+        left: 20px;
+        top:47.4%;
+        z-index: 4;
+        display: none;
+        opacity: 0.9;
+        
 }
+
 
 
 .hide{
