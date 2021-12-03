@@ -90,7 +90,7 @@ html ::-webkit-scrollbar-thumb {
 
 @media (min-width: 1600px) {
   #main #ueberProjekt {
-    margin: 0 33%;
+    margin: -5% 33% 0 33%;
   }
 }
 
@@ -147,7 +147,7 @@ html ::-webkit-scrollbar-thumb {
   gap: 19px;
   font-family: "Laila", sans-serif;
   font-size: 1em;
-  margin: 0 auto;
+  margin: 0 auto -3% auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   /* Small Screen */
@@ -180,6 +180,13 @@ html ::-webkit-scrollbar-thumb {
   height: 1px;
   background: black;
   margin-bottom: -25px;
+  /* Small Screen */
+}
+
+@media (max-width: 768px) {
+  #main hr {
+    width: 70%;
+  }
 }
 
 #main #unterstuetztVon {

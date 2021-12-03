@@ -50,7 +50,7 @@ html {
     }
     /* X Large Screen */
     @media (min-width: 1600px) {
-      margin: 0 33%;
+      margin: -5% 33% 0 33%;
     }
     
 
@@ -96,7 +96,7 @@ html {
       gap: 19px;
       font-family: $startSeiteFont;
       font-size: 1em;
-      margin: 0 auto;
+      margin: 0 auto -3% auto;
       flex-wrap: wrap;
 
       /* Small Screen */
@@ -125,6 +125,10 @@ html {
     height: 1px;
     background: black;
     margin-bottom: -25px;
+    /* Small Screen */
+    @media (max-width: 768px) {
+      width: 70%;
+    }
   }
 
   #unterstuetztVon {
