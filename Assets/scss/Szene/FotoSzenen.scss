@@ -91,9 +91,10 @@ html {
         color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize;
-        top: 7%;
+        top: 8%;
         width: 56%;
         font-family: $szeneTextFont;
+        text-align: center;
 
         @media ( max-width: 1280px ) {
             top: 7%;
@@ -196,16 +197,18 @@ html {
 #soundIcon {
     width: 2%;
     position: fixed;
-    left: 14.4%;
-    top: 19%;
-    opacity: 0.6;
+    left: 12%;
+    top: 48.4%;
+    opacity: $iconOppacity;
+    z-index: 5;
 }
+
 
 
 #nextBt{
     position: fixed; 
-    width: 4%;
-    top:50%;
+    width: 3%;
+    top:47.4%;
     right: 20px;
     z-index: 4;
     display: none;
@@ -214,9 +217,9 @@ html {
 
 #backBt{
     position: fixed; 
-        width: 4%;
+        width: 3%;
         left: 20px;
-        top:50%;
+        top:47.4%;
         z-index: 4;
         display: none;
         opacity: 0.9;

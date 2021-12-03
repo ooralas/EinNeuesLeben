@@ -73,7 +73,7 @@ html {
     }
     
     #background {
-        top: 30%;
+        top: 24%;
         left: 25%;
         width: 50%;
         position: fixed;
@@ -83,7 +83,7 @@ html {
     }
 
     #rahmen {
-        top: 30%;
+        top: 24%;
         left: 25%;
         width: 50.1%;
         position: fixed;
@@ -97,9 +97,10 @@ html {
         color: $szeneTextFontColor;
         position: fixed;
         font-size: $szeneTextFontSize + 0.1;
-        top: 19%;
+        top: 16%;
         width: 37%;
         font-family: $szeneTextFont;
+        text-align: center;
 
         @media ( max-width: 1280px ) {
             top: 13%;
@@ -112,7 +113,7 @@ html {
         width: 6px;
         height: 49%;
         left: 18%;
-        top: 34%;
+        top: 28%;
         border-radius: 10px;
         position: fixed;
         overflow: hidden;
@@ -160,15 +161,26 @@ html {
 #soundIcon {
     width: 2%;
     position: fixed;
-    left: 17.4%;
-    top: 29%;
-    opacity: 0.6;
+    left: 15%;
+    top: 48.4%;
+    opacity: $iconOppacity;
+    z-index: 5;
+}
+
+
+#scrollGif{
+    position: fixed; 
+    width: 4%;
+    top:47%;
+    left: 85%;
+    z-index: 4;
+    opacity: $iconOppacity;
 }
 
 #nextBt{
     position: fixed; 
-    width: 4%;
-    top:50%;
+    width: 3%;
+    top:47.4%;
     right: 20px;
     z-index: 4;
     display: none;
@@ -177,13 +189,13 @@ html {
 
 #backBt{
     position: fixed; 
-        width: 4%;
+        width: 3%;
         left: 20px;
-        top:50%;
+        top:47.4%;
         z-index: 4;
         display: none;
         opacity: 0.9;
-    
+        
 }
 
 .hide{

@@ -1,5 +1,7 @@
 const PROGRESSIVEBAR = document.getElementById("progBar");
-
+let playBtn = document.getElementById("playButton");
+//playBtn.style.backgroundImage = "url('play.png') no repeat";
+//playBtn.style.left = 30 + "%";
 
 var sound = new Howl({
     src: ['https://www.mboxdrive.com/AlgerienFahrt.mp3'],
@@ -24,5 +26,7 @@ let startSound = () => {
         sound.play();
     }
 }
+
+
 
 let startTimeBar = (soundDuration) => PROGRESSIVEBAR.style.animation = "fillTimeBar " + soundDuration + "s" + " linear forwards";
