@@ -11,7 +11,7 @@ const soundURL = getSceneName();
 
 switch (soundURL) {
     case "bushaltestelle":
-        soundSrc = "https://www.mboxdrive.com/Bushaltestelle%20.mp3";
+        soundSrc = "https://www.mboxdrive.com/Bushaltestelle.mp3";
         break;
     case "fluechtlingsheim":
         soundSrc = "https://www.mboxdrive.com/Fluechtlingsheim.mp3";
