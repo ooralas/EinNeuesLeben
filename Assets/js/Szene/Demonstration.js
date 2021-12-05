@@ -4,10 +4,10 @@ const SOLDIER1 = document.getElementById("soldier1");
 const SOLDIER2 = document.getElementById("soldier2");
 const PROGRESSIVEBAR = document.getElementById("progBar");
 var playBtn = document.getElementById("playButton");
-//playBtn.style.backgroundImage = "url('play.png') no repeat";
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Demonstration.mp3'],
+    // src: ['https://www.mboxdrive.com/Demonstration.mp3'],
+    src:['../Assets/audios/1.mp3'],
     html5:true
 });
 

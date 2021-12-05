@@ -4,7 +4,8 @@ const BACKGROUND = document.getElementById("background");
 const PROGRESSIVEBAR = document.getElementById("progBar");
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Trennung.mp3.mp3'],
+    // src: ['https://www.mboxdrive.com/Trennung.mp3.mp3'],
+    src:['../Assets/audios/2.mp3'],
     html5:true
 });
 
