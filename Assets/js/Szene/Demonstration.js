@@ -71,10 +71,15 @@ window.addEventListener('scroll',function(){
 
     startSound();
     startTimeBar(sound.duration());
-    if(value > 900){
-        $("#nextBtTrigger").trigger("click");
-    }
+    
 });
+
+let startSound = () => {
+    if(!sound.playing()){
+        sound.fade(0, 0.4, 5000);
+        sound.play();
+    }
+}
 
 
 
