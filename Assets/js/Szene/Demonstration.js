@@ -23,12 +23,12 @@ window.addEventListener('scroll',function(){
    
     SOLDIER1.style.left = value * 0.005 + 20 + '%';
     SOLDIER1.style.width = value * 0.005 + 60 + '%';
-    SOLDIER1.style.top = -value * 0.005 + 34 + '%';
+    SOLDIER1.style.top = -value * 0.005 + 20 + '%';
 
 
     SOLDIER2.style.left = -value * 0.005 + 20 + '%';
     SOLDIER2.style.width = value * 0.005 + 60 + '%';
-    SOLDIER2.style.top = -value * 0.005 + 34 + '%';
+    SOLDIER2.style.top = -value * 0.005 + 20 + '%';
 
 
     if(value<300){
