@@ -11,19 +11,16 @@ const soundURL = getSceneName();
 
 switch (soundURL) {
     case "bushaltestelle":
-        soundSrc = "https://www.mboxdrive.com/Bushaltestelle.mp3";
+        soundSrc = '../Assets/audios/9.mp3';
         break;
     case "fluechtlingsheim":
-        soundSrc = "https://www.mboxdrive.com/Fluechtlingsheim.mp3";
+        soundSrc = '../Assets/audios/8.mp3';
         break;
     case "hotel":
-        soundSrc = "https://www.mboxdrive.com/Hotel.mp3";
+        soundSrc = '../Assets/audios/11.mp3';
         break;
     case "kausa":
-        soundSrc = "https://www.mboxdrive.com/Kausa.mp3";
-        break;
-    case "zukunft":
-        soundSrc = "https://www.mboxdrive.com/Zukunft.mp3";
+        soundSrc = '../Assets/audios/10.mp3';
         break;
 }
 

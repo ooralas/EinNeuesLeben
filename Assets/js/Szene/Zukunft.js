@@ -1,37 +1,7 @@
 const PROGRESSIVEBAR = document.getElementById("progBar");
-let soundSrc = "";
-
-let getSceneName = () => {
-    let path = window.location.pathname;
-    let page = path.split("/").pop();
-    return page;
-}
-const soundURL = getSceneName();
-
-
-
-switch (soundURL) {
-    case "bushaltestelle":
-        soundSrc = "https://www.mboxdrive.com/Bushaltestelle%20.mp3";
-        break;
-    case "fluechtlingsheim":
-        soundSrc = "https://www.mboxdrive.com/Fluechtlingsheim.mp3";
-        break;
-    case "hotel":
-        soundSrc = "https://www.mboxdrive.com/Hotel.mp3";
-        break;
-    case "kausa":
-        soundSrc = "https://www.mboxdrive.com/Kausa.mp3";
-        break;
-    case "zukunft":
-        soundSrc = "https://www.mboxdrive.com/Zukunft.mp3";
-        break;
-}
-
-
 
 var sound = new Howl({
-    src: [soundSrc],
+    src: ['../Assets/audios/12.mp3'],
     html5:true
   });
 

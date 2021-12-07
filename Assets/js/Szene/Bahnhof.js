@@ -4,7 +4,7 @@ const DIALLO = document.getElementById("diallo");
 const PROGRESSIVEBAR = document.getElementById("progBar");
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Frankreich_Bahnhof.mp3'],
+    src:['../Assets/audios/7.mp3'],
     html5:true
 });
 

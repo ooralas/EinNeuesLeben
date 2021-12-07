@@ -3,7 +3,7 @@ const DIALLO = document.getElementById("diallo");
 const PROGRESSIVEBAR = document.getElementById("progBar");
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/MarrokoJobs.mp3'],
+    src:['../Assets/audios/4.mp3'],
     html5:true
 });
 
