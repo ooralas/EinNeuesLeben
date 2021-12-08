@@ -4,7 +4,7 @@ let playBtn = document.getElementById("playButton");
 //playBtn.style.left = 30 + "%";
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/AlgerienFahrt.mp3'],
+    src:['../Assets/audios/3.mp3'],
     html5:true
   });
 

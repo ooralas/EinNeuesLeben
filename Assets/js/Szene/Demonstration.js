@@ -6,7 +6,6 @@ const PROGRESSIVEBAR = document.getElementById("progBar");
 var playBtn = document.getElementById("playButton");
 
 var sound = new Howl({
-    // src: ['https://www.mboxdrive.com/Demonstration.mp3'],
     src:['../Assets/audios/1.mp3'],
     html5:true
 });

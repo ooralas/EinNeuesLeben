@@ -3,7 +3,7 @@ const BACKGROUND = document.getElementById("backgroundIMG");
 const PROGRESSIVEBAR = document.getElementById("progBar");
 
 var sound = new Howl({
-    src: ['https://www.mboxdrive.com/Bootsfahrt_szene.mp3'],
+    src:['../Assets/audios/6.mp3'],
     html5:true
   }); 
 
