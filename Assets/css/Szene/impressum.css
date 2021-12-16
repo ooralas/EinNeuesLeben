@@ -189,7 +189,24 @@ html ::-webkit-scrollbar-thumb {
   }
 }
 
-#main #unterstuetztVon {
+#main .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+}
+
+#main .logos .logoList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,30 +228,30 @@ html ::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
-  #main #unterstuetztVon {
+  #main .logos .logoList {
     margin: 0 10%;
   }
 }
 
 @media (min-width: 992px) {
-  #main #unterstuetztVon {
+  #main .logos .logoList {
     margin: 0 15%;
   }
 }
 
 @media (min-width: 1200px) {
-  #main #unterstuetztVon {
+  #main .logos .logoList {
     margin: 0 20%;
   }
 }
 
 @media (min-width: 1400px) {
-  #main #unterstuetztVon {
+  #main .logos .logoList {
     margin: 0 30%;
   }
 }
 
-#main #unterstuetztVon p {
+#main .logos .logoList p {
   margin-top: 4%;
   margin-right: 4px;
   height: 100%;
@@ -248,26 +265,35 @@ html ::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
-  #main #unterstuetztVon p {
+  #main .logos .logoList p {
     font-size: 1.5vw;
   }
 }
 
 @media (min-width: 992px) {
-  #main #unterstuetztVon p {
+  #main .logos .logoList p {
     font-size: 1.1vw;
   }
 }
 
 @media (min-width: 1200px) {
-  #main #unterstuetztVon p {
+  #main .logos .logoList p {
     font-size: 0.7vw;
   }
 }
 
-#main #unterstuetztVon .logo {
-  width: 100%;
-  padding: 0px;
+#main .logos .logoList .logo {
+  width: 90%;
+}
+
+#main .logos .kausaSponsers .logo {
+  width: 90%;
+}
+
+#main .logos > p {
+  font-family: "Laila", sans-serif;
+  text-align: center;
+  margin: 1% 2%;
 }
 
 #impressum {

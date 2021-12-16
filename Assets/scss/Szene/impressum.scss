@@ -131,61 +131,77 @@ html {
     }
   }
 
-  #unterstuetztVon {
+  .logos {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin:0 2%;
+    row-gap: 10px;
 
-    /* Small Screen */
-    @media (min-width: 768px) {
-      margin:0 10%;
+    .logoList {
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      margin:0 2%;
+  
+      /* Small Screen */
+      @media (min-width: 768px) {
+        margin:0 10%;
+      }
+      /* Medium Screen */
+      @media (min-width: 992px) {
+        margin:0 15%;
+      }
+      /* Large Screen */
+      @media (min-width: 1200px) {
+        margin:0 20%;
+      }
+      /* X Large Screen */
+      @media (min-width: 1400px) {
+        margin:0 30%;
+      }
+      
+      p {
+          margin-top: 4%;
+          margin-right: 4px;
+          height: 100%;
+          width: 60%;
+          font-family: $startSeiteFont;
+          font-size: 1.8vw;
+          font-weight: 400;
+  
+          /* Small Screen */
+          @media (min-width: 768px) {
+            font-size: 1.5vw;
+          }
+          /* Medium Screen */
+          @media (min-width: 992px) {
+            font-size: 1.1vw;
+          }
+          /* Large Screen */
+          @media (min-width: 1200px) {
+            font-size: 0.7vw;
+          }
+      }
+  
+  
+      .logo {
+          width: 90%;
+      }
+  
     }
-    /* Medium Screen */
-    @media (min-width: 992px) {
-      margin:0 15%;
+    .kausaSponsers .logo {
+      width: 90%;
     }
-    /* Large Screen */
-    @media (min-width: 1200px) {
-      margin:0 20%;
-    }
-    /* X Large Screen */
-    @media (min-width: 1400px) {
-      margin:0 30%;
-    }
-    
-    p {
-        margin-top: 4%;
-        margin-right: 4px;
-        height: 100%;
-        width: 60%;
-        font-family: $startSeiteFont;
-        // font-size: 0.6vw;
-        font-size: 1.8vw;
-        font-weight: 400;
 
-        /* Small Screen */
-        @media (min-width: 768px) {
-          font-size: 1.5vw;
-        }
-        /* Medium Screen */
-        @media (min-width: 992px) {
-          font-size: 1.1vw;
-        }
-        /* Large Screen */
-        @media (min-width: 1200px) {
-          font-size: 0.7vw;
-        }
-    }
-
-    .logo {
-
-        width: 100%;
-        padding: 0px;
-        
+    & > p {
+      font-family: $startSeiteFont;
+      text-align: center;
+      margin: 1% 2%;
     }
   }
+
 
 }
 
