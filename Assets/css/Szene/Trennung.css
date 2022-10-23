@@ -1,6 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@font-face {
+  font-family: "Laila";
+  font-weight: 300;
+  src: url("/Assets/fonts/Laila-Light.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 500;
+  src: url("/Assets/fonts/Laila-Medium.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 700;
+  src: url("/Assets/fonts/Laila-Bold.ttf");
+}
+@font-face {
+  font-family: "Old Standard TT";
+  font-weight: 300;
+  src: url("/Assets/fonts/OldStandardTT-Regular.ttf");
+}
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -16,15 +33,12 @@ html {
           box-sizing: border-box;
   height: 300vh;
 }
-
 html ::-webkit-scrollbar {
   width: 9px;
 }
-
 html ::-webkit-scrollbar-track {
   background: #494646;
 }
-
 html ::-webkit-scrollbar-thumb {
   background: #756c6c;
   border-radius: 10px;
@@ -45,7 +59,6 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 #main #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +75,6 @@ html ::-webkit-scrollbar-thumb {
   margin-right: 5%;
   margin-top: 4%;
 }
-
 @media (max-width: 1280px) {
   #main #navigation {
     width: 26%;
@@ -70,7 +82,6 @@ html ::-webkit-scrollbar-thumb {
     margin-top: 3%;
   }
 }
-
 #main #navigation #linkToFirstPage {
   font-size: 1.2em;
   width: auto;
@@ -79,27 +90,22 @@ html ::-webkit-scrollbar-thumb {
   font-family: "Old Standard TT", serif;
   margin-top: 1%;
 }
-
 #main #navigation #linkToFirstPage:active {
   color: inherit;
 }
-
 @media (max-width: 1280px) {
   #main #navigation #linkToFirstPage {
     font-size: 1em;
   }
 }
-
 #main #navigation img {
   width: 100%;
 }
-
 @media (max-width: 1280px) {
   #main #navigation img {
     width: 70%;
   }
 }
-
 #main #zeichnungenContainer #background {
   top: 20%;
   left: 20%;
@@ -107,13 +113,11 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 0;
 }
-
 @media (max-width: 1280px) {
   #main #zeichnungenContainer #background {
     top: 20%;
   }
 }
-
 #main #zeichnungenContainer #diallo {
   top: 20%;
   left: 20%;
@@ -121,13 +125,11 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 1;
 }
-
 @media (max-width: 1280px) {
   #main #zeichnungenContainer #diallo {
     top: 20%;
   }
 }
-
 #main #zeichnungenContainer #eltern {
   top: 20%;
   left: 20%;
@@ -135,13 +137,11 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 2;
 }
-
 @media (max-width: 1280px) {
   #main #zeichnungenContainer #eltern {
     top: 20%;
   }
 }
-
 #main #zeichnungenContainer #rahmen {
   top: 20%;
   left: 10%;
@@ -149,13 +149,11 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 3;
 }
-
 @media (max-width: 1280px) {
   #main #zeichnungenContainer #rahmen {
     top: 20%;
   }
 }
-
 #main #zeichnungenContainer #rahmen2 {
   top: 20%;
   left: 20%;
@@ -164,13 +162,11 @@ html ::-webkit-scrollbar-thumb {
   z-index: 3;
   overflow: hidden;
 }
-
 @media (max-width: 1280px) {
   #main #zeichnungenContainer #rahmen2 {
     top: 20%;
   }
 }
-
 #main #text {
   display: none;
   color: szeneTextFontColor;
@@ -183,37 +179,31 @@ html ::-webkit-scrollbar-thumb {
   /* Landscape phones and down */
   /* Landscape phone to portrait tablet */
 }
-
 @media (max-width: 480px) {
   #main #text {
     top: 21%;
   }
 }
-
 @media (max-width: 640px) {
   #main #text {
     top: 23%;
   }
 }
-
 @media (max-width: 731px) {
   #main #text {
     top: 21%;
   }
 }
-
 @media (max-width: 800px) {
   #main #text {
     top: 19%;
   }
 }
-
 @media (max-width: 1280px) {
   #main #text {
     top: 7%;
   }
 }
-
 #main #timeBar {
   background-color: rgba(116, 116, 116, 0.212);
   width: 6px;
@@ -225,41 +215,35 @@ html ::-webkit-scrollbar-thumb {
   overflow: hidden;
   z-index: 4;
 }
-
 @media (max-width: 1440px) {
   #main #timeBar {
     top: 33%;
     height: 48%;
   }
 }
-
 @media (max-width: 1280px) {
   #main #timeBar {
     height: 60%;
     top: 24%;
   }
 }
-
 @media (max-width: 1024px) {
   #main #timeBar {
     top: 32%;
     height: 36%;
   }
 }
-
 @media (max-width: 768px) {
   #main #timeBar {
     top: 31%;
     height: 27%;
   }
 }
-
 #main #timeBar #progBar {
   width: 100%;
   height: 0%;
   background-color: rgba(114, 114, 114, 0.383);
 }
-
 @-webkit-keyframes fillTimeBar {
   0% {
     height: 0;
@@ -268,7 +252,6 @@ html ::-webkit-scrollbar-thumb {
     height: 100%;
   }
 }
-
 @keyframes fillTimeBar {
   0% {
     height: 0;

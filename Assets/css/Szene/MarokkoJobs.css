@@ -1,6 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@font-face {
+  font-family: "Laila";
+  font-weight: 300;
+  src: url("/Assets/fonts/Laila-Light.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 500;
+  src: url("/Assets/fonts/Laila-Medium.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 700;
+  src: url("/Assets/fonts/Laila-Bold.ttf");
+}
+@font-face {
+  font-family: "Old Standard TT";
+  font-weight: 300;
+  src: url("/Assets/fonts/OldStandardTT-Regular.ttf");
+}
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -14,15 +31,12 @@ html {
           box-sizing: border-box;
   height: 300vh;
 }
-
 html ::-webkit-scrollbar {
   width: 9px;
 }
-
 html ::-webkit-scrollbar-track {
   background: #494646;
 }
-
 html ::-webkit-scrollbar-thumb {
   background: #756c6c;
   border-radius: 10px;
@@ -43,7 +57,6 @@ html ::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
 }
-
 #main #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +73,6 @@ html ::-webkit-scrollbar-thumb {
   margin-right: 5%;
   margin-top: 4%;
 }
-
 @media (max-width: 1280px) {
   #main #navigation {
     width: 26%;
@@ -68,7 +80,6 @@ html ::-webkit-scrollbar-thumb {
     margin-top: 3%;
   }
 }
-
 #main #navigation #linkToFirstPage {
   font-size: 1.2em;
   width: auto;
@@ -77,27 +88,22 @@ html ::-webkit-scrollbar-thumb {
   font-family: "Old Standard TT", serif;
   margin-top: 1%;
 }
-
 #main #navigation #linkToFirstPage:active {
   color: inherit;
 }
-
 @media (max-width: 1280px) {
   #main #navigation #linkToFirstPage {
     font-size: 1em;
   }
 }
-
 #main #navigation img {
   width: 100%;
 }
-
 @media (max-width: 1280px) {
   #main #navigation img {
     width: 70%;
   }
 }
-
 #main #text {
   display: none;
   color: black;
@@ -108,7 +114,6 @@ html ::-webkit-scrollbar-thumb {
   font-family: "Old Standard TT", serif;
   text-align: center;
 }
-
 @media (max-width: 1280px) {
   #main #text {
     top: 9.5%;
@@ -123,7 +128,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 0;
 }
-
 @media (max-width: 1280px) {
   .background img {
     top: 20%;
@@ -137,7 +141,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 3;
 }
-
 @media (max-width: 1280px) {
   .background2 img {
     top: 20%;
@@ -151,7 +154,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 2;
 }
-
 @media (max-width: 1280px) {
   .farbe img {
     top: 20%;
@@ -165,7 +167,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 3;
 }
-
 @media (max-width: 1280px) {
   .diallo img {
     top: 20%;
@@ -179,7 +180,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 4;
 }
-
 @media (max-width: 1280px) {
   .balken img {
     top: 20%;
@@ -193,7 +193,6 @@ html ::-webkit-scrollbar-thumb {
   position: fixed;
   z-index: 3;
 }
-
 @media (max-width: 1280px) {
   #rahmen {
     top: 20%;
@@ -211,35 +210,30 @@ html ::-webkit-scrollbar-thumb {
   overflow: hidden;
   z-index: 4;
 }
-
 @media (max-width: 1440px) {
   #timeBar {
     top: 31%;
     height: 52%;
   }
 }
-
 @media (max-width: 1280px) {
   #timeBar {
     height: 60%;
     top: 24%;
   }
 }
-
 @media (max-width: 1024px) {
   #timeBar {
     top: 31%;
     height: 38%;
   }
 }
-
 @media (max-width: 768px) {
   #timeBar {
     top: 31%;
     height: 25%;
   }
 }
-
 #timeBar #progBar {
   width: 100%;
   height: 0%;
@@ -263,7 +257,6 @@ html ::-webkit-scrollbar-thumb {
     height: 100%;
   }
 }
-
 #soundIcon {
   width: 2%;
   position: fixed;

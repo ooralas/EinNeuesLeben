@@ -1,6 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@font-face {
+  font-family: "Laila";
+  font-weight: 300;
+  src: url("/Assets/fonts/Laila-Light.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 500;
+  src: url("/Assets/fonts/Laila-Medium.ttf");
+}
+@font-face {
+  font-family: "Laila";
+  font-weight: 700;
+  src: url("/Assets/fonts/Laila-Bold.ttf");
+}
+@font-face {
+  font-family: "Old Standard TT";
+  font-weight: 300;
+  src: url("/Assets/fonts/OldStandardTT-Regular.ttf");
+}
 .disable_select {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -32,25 +49,21 @@
   min-height: 100vh;
   background-color: #fae6c0;
 }
-
 #main #main__linkToImpressum {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 9%;
   margin-top: 1%;
 }
-
 #main #main__linkToImpressum img {
   width: 1.7vw;
 }
-
 #main #headLine {
   color: black;
   font-size: 3.5vw;
   font-weight: 400;
   font-family: "Laila", sans-serif;
 }
-
 #main #text {
   color: black;
   font-family: "Laila", sans-serif;
@@ -59,31 +72,26 @@
   text-align: center;
   font-weight: 300;
 }
-
 #main #navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 3% 0;
 }
-
 #main #navigation a {
   border: 1.7px solid black;
   border-radius: 7px;
   text-decoration: none;
   margin: 0 20px;
 }
-
 #main #navigation a:active {
   color: inherit;
 }
-
 #main #navigation a:hover {
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   background-color: white;
 }
-
 #main #navigation a div {
   position: relative;
   display: -webkit-box;
@@ -92,12 +100,10 @@
   margin: 1px 20px;
   gap: 2px;
 }
-
 #main #navigation a div span {
   font-family: "Laila", sans-serif;
   color: black;
 }
-
 #main #karte {
   width: 50%;
 }
@@ -120,12 +126,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #999999;
+  background-color: rgb(153, 153, 153);
   border-radius: 10px;
   overflow: hidden;
   z-index: 10;
 }
-
 .modal #modal__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,11 +144,9 @@
   color: white;
   font-size: 1.2em;
 }
-
 .modal #modal__text p {
   text-align: center;
 }
-
 .modal #modal__btn {
   outline: none;
   border: none;
@@ -153,14 +156,12 @@
   font-weight: bolder;
   font-size: 1em;
   padding-bottom: 1%;
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
-
 .modal #modal__btn:hover {
   color: black;
 }
-
 .modal.active {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -178,7 +179,6 @@
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
-
 #overlay.active {
   opacity: 1;
   pointer-events: all;
